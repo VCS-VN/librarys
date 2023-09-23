@@ -14,5 +14,9 @@
   "license": "ISC",
   "publishConfig": {
     "@vcsepis:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vcsepis/librarys.git"
   }
 }
