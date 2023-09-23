@@ -1,11 +1,15 @@
 {
-  "name": "libs",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "bun-types": "latest"
+  "name": "@vcsepis/librarys",
+  "version": "1.0.0",
+  "description": "To install dependencies:",
+  "main": "index.js",
+  "dependencies": {
+    "bun-types": "^1.0.3"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "",
+  "license": "ISC"
 }
