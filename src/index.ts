@@ -1,1 +1,1 @@
-export * from './grpc-connect/index'
+export * from './grpc-connect/index';
