@@ -1,11 +1,8 @@
 {
   "name": "@vcsepis/librarys",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "To install dependencies:",
   "main": "index.js",
-  "dependencies": {
-    "bun-types": "^1.0.3"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "exit 0"
