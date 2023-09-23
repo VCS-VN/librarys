@@ -47,7 +47,9 @@ jobs:
       - run: |
           rm -rf src
           rm .eslintrc.js
-          rm .prettierrc.js
+          rm .prettierrc
+          rm nest-cli.json
+          rm .gitignore
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
