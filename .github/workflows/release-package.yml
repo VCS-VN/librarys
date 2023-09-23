@@ -44,6 +44,10 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@vcsepis'
       - run: npm run build
+      - run: |
+          rm -rf src
+          rm .eslintrc.js
+          rm .prettierrc.js
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
