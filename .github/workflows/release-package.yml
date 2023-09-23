@@ -50,6 +50,7 @@ jobs:
           rm .prettierrc
           rm nest-cli.json
           rm .gitignore
+          rm -rf .github
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
