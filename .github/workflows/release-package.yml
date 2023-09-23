@@ -1,38 +1,3 @@
-name: Node.js Package
-
-on:
-  push:
-    branches:
-      - master  # Y
-
-jobs:
-  # build:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 20
-  #     - run: npm ci
-
-  publish-gpr:
-    # needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          registry-url: https://npm.pkg.github.com/
-          scope: '@vcsepis'
-      - run: npm ci
-      # - run: npm run build
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
-
-
-
 # name: Node.js Package
 
 # on:
@@ -41,6 +6,7 @@ jobs:
 #       - master  # Y
 
 # jobs:
+
 #   publish-gpr:
 #     # needs: build
 #     runs-on: ubuntu-latest
@@ -49,15 +15,34 @@ jobs:
 #       - uses: actions/setup-node@v3
 #         with:
 #           node-version: 20
-#           # registry-url: https://npm.pkg.github.com/
-#       - name: Build
-#         run: |
-#           npm ci
-#           npm run build
-#           rm -rf src
-#           rm .eslintrc.js
-#           rm package-lock.json
-
+#           registry-url: https://npm.pkg.github.com/
+#           scope: '@vcsepis'
+#       - run: npm ci
+#       # - run: npm run build
 #       - run: npm publish
 #         env:
 #           NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
+
+name: VCSEPIS Packages
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  buld-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout to repository
+        uses: actions/checkout@v4
+      - name: install and build
+        run: npm ci --save-dev typescript
+      - name: publish to registry
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@vcsepis'
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}

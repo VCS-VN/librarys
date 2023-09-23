@@ -2,7 +2,10 @@
   "name": "@vcsepis/librarys",
   "version": "0.0.6",
   "description": "To install dependencies:",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@vcsepis"
+  },
   "scripts": {
     "build": "nest build"
   },
