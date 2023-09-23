@@ -1,32 +1,21 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@vcsepis": [
-        "./dist/index"
-      ],
-      "@vcsepis/grpc-connect": [
-        "./dist/grpc-connect/index"
-      ]
-    },
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "target": "es2015",
+      "declaration": true,
+      "outDir": "./dist",
+      "baseUrl": ".",
+      "paths": {
+        "@/grpc-connect": [
+          "grpc-connect/src"
+        ],
+        "@/grpc-connect/*": [
+          "grpc-connect/src/*"
+        ],
+      }
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", "tests"]
 }
