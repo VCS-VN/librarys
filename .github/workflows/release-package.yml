@@ -26,10 +26,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@vcsepis'
       - run: npm ci
-      - run: npm run build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
 
 
 
