@@ -6,17 +6,17 @@ on:
       - master  # Y
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-      - run: npm ci
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 20
+  #     - run: npm ci
 
   publish-gpr:
-    needs: build
+    # needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,6 +26,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@vcsepis'
       - run: npm ci
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
