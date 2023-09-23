@@ -6,74 +6,27 @@ on:
       - master  # Y
 
 jobs:
-  publish-gpr:
-    # needs: build
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-          # registry-url: https://npm.pkg.github.com/
-      - name: Build
-        run: |
-          npm ci
-          npm run build
-          zip -r dist.zip ./dist
+      - run: npm ci
 
-      - name: version
-        run: echo "::set-output name=version::$(./bin/azblogfilter --version)"
-        id: version
-  
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+          scope: '@vcsepis'
+      - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GIT_PASSWORD }}
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
 
-#     strategy:
-#       matrix:
-#         node-version: [18.x]
-    
-#     steps:
-#     - uses: actions/checkout@v2
-
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v1
-#       with:
-#         node-version: ${{ matrix.node-version }}
-
-#     - name: Build
-#       run: |
-#         npm install
-#         npm run build
-#         zip -r dist.zip ./dist
-#     - name: version
-#       run: echo "::set-output name=version::$(./bin/azblogfilter --version)"
-#       id: version
-#     - name: Create Release
-#       id: create-release
-#       uses: actions/create-release@v1
-#       with:
-#         draft: false
-#         prerelease: false
-#         tag_name: ${{ github.run_number }}
-#         release_name: Release ${{ github.run_number }}
-#         body: |
-#             Changes in this Release
-#             - First Change
-#             - Second Change
-#       env:
-#         GITHUB_TOKEN: ${{ github.token }}
-
-#     - name: Upload Release Asset
-#       id: upload-release
-#       uses: actions/upload-release-asset@v1
-#       with:
-#         upload_url: ${{ steps.create-release.outputs.upload_url }}
-#         asset_path: ./dist.zip
-#         asset_name: dist.zip
-#         asset_content_type: application/zip
-#       env:
-#         GITHUB_TOKEN: ${{ github.token }}
