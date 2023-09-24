@@ -7,3 +7,5 @@ export * from './model';
 export * from './request-log';
 
 export * from './enum';
+
+export * from './transaction-log';
