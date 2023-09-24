@@ -8,5 +8,23 @@ export enum PAYMENT_TYPE {
   PAYPAL = 'PAYPAL',
   APPLE_PAY = 'APPLE_PAY',
   GOOGLE_PAY = 'GOOGLE_PAY',
-  POS = 'POS'
+  POS = 'POS',
+}
+
+export enum PAYMENT_RESOURCE {
+  NORMAL = 'normal',
+  E_COMMERCE_STORE_ORDER = 'e_commerce_store_order',
+  E_COMMERCE_CUSTOMER_ORDER = 'e_commerce_customer_order',
+}
+
+export enum WITHDRAW_TYPE {
+  AIR_WALLEX = 'AIR_WALLEX',
+}
+
+export enum PAYOUT_RESOURCE {
+  E_COMMERCE_STORE = 'e_commerce_store',
+}
+
+export enum REFUND_RESOURCE {
+  E_COMMERCE_STORE = 'e_commerce_store',
 }
