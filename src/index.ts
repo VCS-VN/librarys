@@ -1,7 +1,9 @@
-export * from './grpc-connect/index';
+export * from './grpc-connect';
 
-export * from './interfaces/index';
+export * from './interfaces';
 
-export * from './model/index';
+export * from './model';
 
-export * from './request-log/index';
+export * from './request-log';
+
+export * from './enum';

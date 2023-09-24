@@ -1,3 +1,3 @@
-export * from './payments/index';
+export * from './payments';
 
 export interface IEmpty {}
