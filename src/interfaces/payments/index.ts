@@ -14,4 +14,5 @@ export interface IPayment {
   descriptor?: string;
   status: Status;
   resource: string;
+  provider: string;
 }

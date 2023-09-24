@@ -16,6 +16,7 @@ message CreatePayment{
     string resource = 6;
     string paymentType = 7;
     int32 countryId = 8;
+    string provider = 9;
 }
 
 message Payment {
@@ -28,4 +29,5 @@ message Payment {
     string resource = 7;
     string paymentType = 8;
     int32 countryId = 9;
+    string provider = 10;
 }
