@@ -1,7 +1,7 @@
-import { Observer } from 'rxjs';
+import { Observable } from 'rxjs';
 
 export interface IPaymentService {
-  add(payment: IPayment): Observer<IPayment>;
+  add(payment: IPayment): Observable<IPayment>;
 }
 
 export interface IPayment {}
