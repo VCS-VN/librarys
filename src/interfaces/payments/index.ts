@@ -15,4 +15,5 @@ export interface IPayment {
   status: Status;
   resource: string;
   provider: string;
+  paymentType: string;
 }
