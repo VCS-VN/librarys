@@ -1,5 +1,7 @@
+import { Observer } from 'rxjs';
+
 export interface IPaymentService {
-  add(payment: IPayment): Promise<IPayment>;
+  add(payment: IPayment): Observer<IPayment>;
 }
 
 export interface IPayment {}
