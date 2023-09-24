@@ -24,7 +24,7 @@ message Payment {
     int32 amount = 3;
     optional string description = 4;
     string descriptor = 5;
-    base.Status status = 5;
+    base.Status status = 6;
     string resource = 7;
     string paymentType = 8;
     int32 countryId = 9;
