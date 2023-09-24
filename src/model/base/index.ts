@@ -6,6 +6,7 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { ulid } from 'ulid';
 
 export abstract class AbstractEntityV2 extends BaseEntity {
   @CreateDateColumn({
@@ -40,4 +41,14 @@ export class Status {
     type: 'timestamp',
   })
   updatedAt?: Date;
+}
+
+export function generateEntityId(idProperty: string, prefix?: string): string {
+  if (idProperty) {
+    return idProperty;
+  }
+
+  const id = ulid();
+  prefix = prefix ? `${prefix}_` : '';
+  return `${prefix}${id}`;
 }
