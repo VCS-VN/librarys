@@ -4,7 +4,7 @@ package payment;
 import "./base.proto";
 
 service PaymentService {
-    rpc Add(CreatePayment) returns (CreatePayment);
+    rpc Add(Payment) returns (Payment);
 }
 
 message Payment {
@@ -18,10 +18,5 @@ message Payment {
     string paymentType = 8;
     int32 countryId = 9;
     string provider = 10;
-}
-
-message CreatePayment {
-    extend Payment {
-        optional string intentId = 11;
-      }
+    optional string intentId = 11;
 }
