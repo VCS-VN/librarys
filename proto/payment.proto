@@ -4,5 +4,28 @@ package payment;
 import "./base.proto";
 
 service PaymentService {
-    rpc Add(base.Empty) returns (base.Empty);
+    rpc Add(CreatePayment) returns (Payment);
+}
+
+message CreatePayment{
+    string userId = 1;
+    int32 amount = 2;
+    optional string description = 3;
+    string descriptor = 4;
+    base.Status status = 5;
+    string resource = 6;
+    string paymentType = 7;
+    int32 countryId = 8;
+}
+
+message Payment {
+    string id = 1;
+    string userId = 2;
+    int32 amount = 3;
+    optional string description = 4;
+    string descriptor = 5;
+    base.Status status = 5;
+    string resource = 7;
+    string paymentType = 8;
+    int32 countryId = 9;
 }

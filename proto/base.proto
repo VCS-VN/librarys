@@ -6,3 +6,8 @@ service BaseService {
 }
 
 message Empty{}
+
+message Status{
+    int32 id = 1;
+    string name = 2;
+}
