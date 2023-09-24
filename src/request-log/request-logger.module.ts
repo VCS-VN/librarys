@@ -5,9 +5,14 @@ import {
   RequestLoggerSchema,
 } from './schemas/request-logger.schema';
 import { RequestLoggerService } from './request-logger.service';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+      isGlobal: true,
+    }),
     MongooseModule.forRoot(process.env.JSON_DB_URL, {
       connectionName: 'JSON_DB',
     }),

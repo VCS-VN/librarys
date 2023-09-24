@@ -5,9 +5,14 @@ import {
   TransactionLogger,
   TransactionLoggerSchema,
 } from './schemas/transaction-logger.schema';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+      isGlobal: true,
+    }),
     MongooseModule.forRoot(process.env.JSON_DB_URL, {
       connectionName: 'JSON_DB',
     }),
