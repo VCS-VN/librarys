@@ -7,13 +7,13 @@ export interface IPaymentService {
 
 export interface IPayment {
   id?: string;
-  userId: string;
-  amount: number;
-  countryId: number;
+  userId?: string;
+  amount?: number;
+  countryId?: number;
   description?: string;
   descriptor?: string;
-  status: Status;
-  resource: string;
-  provider: string;
-  paymentType: string;
+  status?: Status;
+  resource?: string;
+  provider?: string;
+  paymentType?: string;
 }
