@@ -17,17 +17,10 @@ type CreateLoggerRequest = {
 export class TransactionLoggerService {
   constructor(
     @InjectModel(TransactionLogger.name, 'JSON_DB')
-    private readonly messageModel: Model<TransactionLogger>,
+    private readonly transactionLoggerModel: Model<TransactionLogger>,
   ) {}
 
-  async create(data: CreateLoggerRequest) {
-    if (!data.title) {
-      data.title = data.title;
-    }
-    // data.createdAt = dayjs.utc().toDate();
-
-    data.createdAt = dayjs().toDate();
-
-    return this.messageModel.create(data);
+  async createTransactionLog(data: TransactionLogger) {
+    return this.transactionLoggerModel.create(data);
   }
 }
