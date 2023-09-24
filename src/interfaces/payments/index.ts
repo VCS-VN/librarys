@@ -2,7 +2,7 @@ import { Status } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface IPaymentService {
-  add(payment: IPayment): Observable<IPayment>;
+  add(payment: IPayment): Observable<ICreatePayment>;
 }
 
 export interface IPayment {
@@ -16,4 +16,8 @@ export interface IPayment {
   resource?: string;
   provider?: string;
   paymentType?: string;
+}
+
+export interface ICreatePayment extends IPayment {
+  intentId?: string
 }
