@@ -5,32 +5,23 @@ export class TransactionLogger {
   @Prop({
     type: String,
   })
-  title: string;
-
-  @Prop({
-    type: String,
-  })
-  url: string;
+  transactionId?: any;
 
   @Prop({
     type: Object,
   })
-  request: any;
-
-  @Prop({
-    type: Object,
-  })
-  response: any;
-
-  @Prop({
-    type: Object,
-  })
-  headers: any;
+  data: any;
 
   @Prop({
     type: Date,
   })
   createdAt: Date;
+
+  @Prop({
+    title: String,
+  })
+  title: string;
 }
 
-export const TransactionLoggerSchema = SchemaFactory.createForClass(TransactionLogger);
+export const TransactionLoggerSchema =
+  SchemaFactory.createForClass(TransactionLogger);
