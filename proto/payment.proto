@@ -20,4 +20,5 @@ message Payment {
     optional string provider = 10;
     optional string intentId = 11;
     optional string currency = 12;
+    optional string paymentType = 13;
 }
