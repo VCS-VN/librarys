@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 export interface IPaymentService {
   add(payment: IPayment): Observable<ICreatePayment>;
   getByPaymentId(payment: IPayment): Observable<IPayment>;
-  update(payment: IPayment): Observable<IPayment>;
+  updatePayment(payment: IPayment): Observable<IPayment>;
 }
 
 export interface IPayment {
