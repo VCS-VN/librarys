@@ -11,13 +11,13 @@ import { ulid } from 'ulid';
 export abstract class AbstractEntityV2 extends BaseEntity {
   @CreateDateColumn({
     name: 'created_at',
-    type: 'timestamp',
+    type: 'timestamptz',
   })
   createdAt?: Date;
 
   @UpdateDateColumn({
     name: 'updated_at',
-    type: 'timestamp',
+    type: 'timestamptz',
   })
   updatedAt?: Date;
 }
@@ -32,13 +32,13 @@ export class Status {
 
   @CreateDateColumn({
     name: 'created_at',
-    type: 'timestamp',
+    type: 'timestamptz',
   })
   createdAt?: Date;
 
   @UpdateDateColumn({
     name: 'updated_at',
-    type: 'timestamp',
+    type: 'timestamptz',
   })
   updatedAt?: Date;
 }
