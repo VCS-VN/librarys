@@ -19,6 +19,7 @@ export interface IPayment {
   type?: string;
   currency?: string;
   paymentType?: PAYMENT_TYPE;
+  paymentId?: string;
 }
 
 export interface ICreatePayment extends IPayment {
