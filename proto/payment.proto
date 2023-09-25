@@ -19,4 +19,5 @@ message Payment {
     int32 countryId = 9;
     string provider = 10;
     optional string intentId = 11;
+    optional string currency = 12;
 }

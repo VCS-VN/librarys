@@ -16,6 +16,7 @@ export interface IPayment {
   resource?: string;
   provider?: string;
   type?: string;
+  currency?: string
 }
 
 export interface ICreatePayment extends IPayment {
