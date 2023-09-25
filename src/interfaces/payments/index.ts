@@ -15,7 +15,7 @@ export interface IPayment {
   status?: Status;
   resource?: string;
   provider?: string;
-  paymentType?: string;
+  type?: string;
 }
 
 export interface ICreatePayment extends IPayment {
