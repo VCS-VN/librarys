@@ -19,6 +19,7 @@ message Payment {
     optional int32 countryId = 9;
     optional string provider = 10;
     optional string intentId = 11;
-    optional string currency = 12;
-    optional string paymentType = 13;
+    optional string clientSecret = 12;
+    optional string currency = 13;
+    optional string paymentType = 14;
 }
