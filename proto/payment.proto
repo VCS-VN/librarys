@@ -6,6 +6,7 @@ import "./base.proto";
 service PaymentService {
     rpc Add(Payment) returns (Payment);
     rpc GetByPaymentId(Payment) returns (Payment);
+    rpc UpdatePayment(Payment) returns (Payment);
 }
 
 message Payment {
@@ -24,4 +25,5 @@ message Payment {
     optional string currency = 13;
     optional string paymentType = 14;
     optional string paymentId = 15;
+    optional bool addedMoney = 16;
 }
