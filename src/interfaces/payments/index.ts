@@ -1,8 +1,9 @@
-import { PAYMENT_RESOURCE, Status } from '@/model';
+import { PAYMENT_RESOURCE, PAYMENT_TYPE, Status } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface IPaymentService {
   add(payment: IPayment): Observable<ICreatePayment>;
+  getByPaymentId(payment: IPayment): Observable<IPayment>;
 }
 
 export interface IPayment {
@@ -17,7 +18,7 @@ export interface IPayment {
   provider?: string;
   type?: string;
   currency?: string;
-  paymentType?: string;
+  paymentType?: PAYMENT_TYPE;
 }
 
 export interface ICreatePayment extends IPayment {
