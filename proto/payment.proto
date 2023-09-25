@@ -9,15 +9,15 @@ service PaymentService {
 
 message Payment {
     optional string id = 1;
-    string userId = 2;
-    int32 amount = 3;
+    optional string userId = 2;
+    optional int32 amount = 3;
     optional string description = 4;
-    string descriptor = 5;
-    base.Status status = 6;
-    string resource = 7;
-    string type = 8;
-    int32 countryId = 9;
-    string provider = 10;
+    optional string descriptor = 5;
+    optional base.Status status = 6;
+    optional string resource = 7;
+    optional string type = 8;
+    optional int32 countryId = 9;
+    optional string provider = 10;
     optional string intentId = 11;
     optional string currency = 12;
 }
