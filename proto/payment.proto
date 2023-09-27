@@ -12,7 +12,7 @@ service PaymentService {
 message Payment {
     optional string id = 1;
     optional string userId = 2;
-    optional int32 amount = 3;
+    optional float amount = 3;
     optional string description = 4;
     optional string descriptor = 5;
     optional base.Status status = 6;
