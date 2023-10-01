@@ -1,0 +1,15 @@
+syntax = "proto3";
+package notification;
+
+import "./base.proto";
+
+service NotificationService {
+    rpc Send(Noti) returns (Noti);
+}
+
+message Noti {
+    optional string id = 1;
+    optional string message = 2;
+    optional string phoneNumber = 3;
+    optional string type = 4;
+}
