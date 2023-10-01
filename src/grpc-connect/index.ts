@@ -1,3 +1,3 @@
-export { PAYMENT_PROTO_PATH } from './file';
+export * from './file';
 
-export { PAYMENT_PORT } from './port';
+export * from './port';
