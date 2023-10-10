@@ -1,0 +1,16 @@
+syntax="proto3";
+package booking;
+
+service BookingService {
+    rpc GetBooking(Booking) returns (Booking);
+    rpc CreateBooking(Booking) returns (Booking);
+    rpc UpdateBooking(Booking) returns (Booking);
+    rpc DeleteBooking(Booking) returns (Booking);
+}
+
+message Booking{
+    optional string id = 1;
+    optional string orderId = 2;
+    optional float amount = 3;
+    optional string payemtType = 4;
+}
