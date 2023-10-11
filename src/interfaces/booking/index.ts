@@ -12,4 +12,8 @@ export interface IBooking {
   orderId?: string;
   amount?: number;
   paymentType?: PAYMENT_TYPE;
+  provider?: string;
+  intentId?: string;
+  clientSecret?: string;
+  userId?: string
 }
