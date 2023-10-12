@@ -12,7 +12,7 @@ message Booking{
     optional string id = 1;
     optional string orderId = 2;
     optional float amount = 3;
-    optional string payemtType = 4;
+    optional string paymentType = 4;
     optional string storeId = 6;
     optional int32 status = 7;
 }
