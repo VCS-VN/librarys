@@ -3,9 +3,8 @@ import { PAYMENT_RESOURCE, PAYMENT_TYPE, Status } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface IBookingService {
-  createBooking(payment: ICreateBooking): Observable<IBooking>;
-  // getByPaymentId(payment: IBooking): Observable<IBooking>;
-  // updatePayment(payment: IBooking): Observable<IBooking>;
+  createBooking(data: ICreateBooking): Observable<IBooking>;
+  updateBooking(data: IUpdateBooking): Observable<IBooking>;
 }
 
 export interface IBooking {
@@ -19,3 +18,5 @@ export interface IBooking {
 }
 
 export interface ICreateBooking extends IBooking {}
+
+export interface IUpdateBooking extends IBooking{}
