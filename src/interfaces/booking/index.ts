@@ -1,8 +1,9 @@
+import { STATUS } from '@/enum';
 import { PAYMENT_RESOURCE, PAYMENT_TYPE, Status } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface IBookingService {
-  create(payment: IBooking): Observable<IBooking>;
+  createBooking(payment: ICreateBooking): Observable<IBooking>;
   // getByPaymentId(payment: IBooking): Observable<IBooking>;
   // updatePayment(payment: IBooking): Observable<IBooking>;
 }
@@ -12,8 +13,9 @@ export interface IBooking {
   orderId?: string;
   amount?: number;
   paymentType?: PAYMENT_TYPE;
-  provider?: string;
-  intentId?: string;
-  clientSecret?: string;
-  userId?: string
+  userId?: string;
+  storeId?: string;
+  status?: STATUS;
 }
+
+export interface ICreateBooking extends IBooking {}

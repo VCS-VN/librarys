@@ -13,8 +13,6 @@ message Booking{
     optional string orderId = 2;
     optional float amount = 3;
     optional string payemtType = 4;
-    optional string provider = 5;
-    optional string intentId = 6;
-    optional string clientSecret = 7;
-    optional string userId = 8;
+    optional string storeId = 6;
+    optional int32 status = 7;
 }
