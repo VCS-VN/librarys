@@ -6,6 +6,7 @@ service BookingService {
     rpc CreateBooking(Booking) returns (Booking);
     rpc UpdateBooking(Booking) returns (Booking);
     rpc DeleteBooking(Booking) returns (Booking);
+    rpc GetByIntentId(Booking) returns (Booking);
 }
 
 message Booking{
