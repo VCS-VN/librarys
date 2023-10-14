@@ -15,7 +15,8 @@ export enum PAYMENT_RESOURCE {
   NORMAL = 'normal',
   E_COMMERCE_STORE_ORDER = 'e_commerce_store_order',
   E_COMMERCE_CUSTOMER_ORDER = 'e_commerce_customer_order',
-  E_COMMERCE_CUSTOMER_BOOKING = 'e_commerce_customer_booking'
+  E_COMMERCE_CUSTOMER_BOOKING = 'e_commerce_customer_booking',
+  E_COMMERCE_STORE_BOOKING = 'e_commerce_store_booking'
 }
 
 export enum WITHDRAW_TYPE {
