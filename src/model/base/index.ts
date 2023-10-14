@@ -22,7 +22,6 @@ export abstract class AbstractEntity {
   updatedAt?: Date;
 }
 
-
 export abstract class AbstractEntityV2 extends BaseEntity {
   @CreateDateColumn({
     name: 'created_at',

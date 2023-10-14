@@ -36,4 +36,5 @@ export enum STATUS {
   RETRIED = 33,
   REFUNDING = 34,
   REFUNDED = 35,
+  BOOKED = 36,
 }
