@@ -17,6 +17,8 @@ export interface IBooking {
   status?: STATUS;
 }
 
-export interface ICreateBooking extends IBooking {}
+export interface ICreateBooking extends IBooking {
+  intentId?: string
+}
 
 export interface IUpdateBooking extends IBooking{}

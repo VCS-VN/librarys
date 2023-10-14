@@ -15,4 +15,5 @@ message Booking{
     optional string paymentType = 4;
     optional string storeId = 6;
     optional int32 status = 7;
+    optional string intentId = 8;
 }
