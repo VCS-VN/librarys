@@ -1,0 +1,12 @@
+syntax="proto3";
+package booking;
+
+service BookingService {
+    rpc GetUserByAccountId(User) returns (User);
+}
+
+message User{
+    optional string id = 1;
+    optional string phoneNumber = 2;
+    optional string accountId = 3;
+}
