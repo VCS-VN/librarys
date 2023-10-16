@@ -30,7 +30,8 @@ on:
     branches:
       - master
 jobs:
-  buld-and-deploy:
+  build-and-deploy:
+    name: Build and deploy new version
     runs-on: ubuntu-latest
     steps:
       - name: checkout to repository
