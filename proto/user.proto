@@ -1,5 +1,5 @@
 syntax="proto3";
-package booking;
+package user;
 
 service BookingService {
     rpc GetUserByAccountId(User) returns (User);
