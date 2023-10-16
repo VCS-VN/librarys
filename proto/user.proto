@@ -3,6 +3,7 @@ package user;
 
 service UserService {
     rpc GetUserByAccountId(User) returns (User);
+    rpc GetUserById(User) returns (User);
 }
 
 message User{

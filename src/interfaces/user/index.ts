@@ -2,6 +2,7 @@ import { Observable } from 'rxjs';
 
 export interface IUserService {
   getUserByAccountId(data: IUser): Observable<IUser>;
+  getUserById(data: IUser): Observable<IUser>;
 }
 
 export interface IUser {
