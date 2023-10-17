@@ -26,4 +26,6 @@ message Payment {
     optional string paymentType = 14;
     optional string paymentId = 15;
     optional bool addedMoney = 16;
+    optional float net =  17;
+    optional float fees = 18;
 }
