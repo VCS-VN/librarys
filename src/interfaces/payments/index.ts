@@ -23,6 +23,7 @@ export interface IPayment {
   paymentId?: string;
   addedMoney?: boolean;
   fees?: number
+  net?: number
 }
 
 export interface ICreatePayment extends IPayment {
