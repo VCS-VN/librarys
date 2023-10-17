@@ -16,7 +16,7 @@ export enum PAYMENT_RESOURCE {
   E_COMMERCE_STORE_ORDER = 'e_commerce_store_order',
   E_COMMERCE_CUSTOMER_ORDER = 'e_commerce_customer_order',
   E_COMMERCE_CUSTOMER_BOOKING = 'e_commerce_customer_booking',
-  E_COMMERCE_STORE_BOOKING = 'e_commerce_store_booking'
+  E_COMMERCE_STORE_BOOKING = 'e_commerce_store_booking',
 }
 
 export enum WITHDRAW_TYPE {
@@ -29,4 +29,9 @@ export enum PAYOUT_RESOURCE {
 
 export enum REFUND_RESOURCE {
   E_COMMERCE_STORE = 'e_commerce_store',
+}
+
+export enum PAYMENT_PROVIDER_ENUM {
+  AIR_WALLEX = 'air_wallex',
+  STRIPE = 'stripe',
 }

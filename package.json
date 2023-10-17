@@ -1,6 +1,6 @@
 {
   "name": "@vcsepis/librarys",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "To install dependencies:",
   "main": "dist/index.js",
   "publishConfig": {
