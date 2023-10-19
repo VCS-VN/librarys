@@ -1,7 +1,7 @@
-export const PAYMENT_PORT = 9000;
+export const PAYMENT_PORT = process.env.PAYMENT_PORT || 9000;
 
-export const NOTIFICATION_PORT = 9000;
+export const NOTIFICATION_PORT = process.env.NOTIFICATION_PORT || 9000;
 
-export const BOOKING_PORT = 9000;
+export const BOOKING_PORT = process.env.BOOKING_PORT || 9000;
 
-export const USER_PORT = 9000;
+export const USER_PORT = process.env.USER_PORT || 9000;

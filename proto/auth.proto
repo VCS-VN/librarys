@@ -1,0 +1,29 @@
+syntax = "proto3";
+package auth;
+
+service AuthService {
+    rpc LoginCustomerByUsername(LoginUsernameMessage) returns (TokenResponseMessage);
+    rpc LoginCustomerByPhonenumber(LoginPhonenumberMessage) returns (IdentifyResponseMessage);
+}
+
+message LoginUsernameMessage {
+    optional string username = 1;
+    optional string password = 2;
+    optional string identityLogin = 3;
+}
+
+message TokenResponseMessage {
+    optional string accessToken = 1;
+    optional string refreshToken = 2;
+    optional string chatToken = 3;
+}
+
+message LoginPhonenumberMessage {
+    optional string phoneNumber = 1;
+    optional string identityLogin = 2;
+}
+
+message IdentifyResponseMessage {
+    optional string identify = 1;
+    optional string otp = 2;
+}
