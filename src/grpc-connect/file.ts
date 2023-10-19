@@ -9,3 +9,5 @@ export const BOOKING_PROTO_PATH = join(__dirname, '../../proto/booking.proto');
 export const USER_PROTO_PATH = join(__dirname, '../../proto/user.proto');
 
 export const AUTH_PROTO_PATH = join(__dirname, '../../proto/auth.proto');
+
+export const CUSTOMER_PROTO_PATH = join(__dirname, '../../proto/auth.proto');
