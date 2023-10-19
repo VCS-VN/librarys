@@ -28,6 +28,7 @@ message LoginPhonenumberMessage {
 message IdentifyResponseMessage {
     optional string identify = 1;
     optional string otp = 2;
+    optional string identityLogin = 3;
 }
 
 message OTPMessage{

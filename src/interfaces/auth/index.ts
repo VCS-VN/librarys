@@ -28,6 +28,7 @@ export interface ITokenResponse {
 export interface IIdentify {
   identify: string;
   otp?: string;
+  identityLogin: IDENTITY_LOGIN_TYPE;
 }
 
 export interface IIdentifyResponse extends IIdentify {}
