@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 export interface IAuthService {
   loginByUsername(data: ILoginUsername): Observable<ITokenResponse>;
   loginByPhoneNumber(data: ILoginPhoneNumber): Observable<IIdentifyResponse>;
+  verifyOTP(data: IIdentify): Observable<ITokenResponse>;
 }
 
 export interface ILoginUsername {
@@ -21,9 +22,12 @@ export interface ITokenResponse {
   accessToken: string;
   refreshToken: string;
   chatToken: string;
+  verified: boolean;
 }
 
-export interface IIdentifyResponse {
+export interface IIdentify {
   identify: string;
   otp?: string;
 }
+
+export interface IIdentifyResponse extends IIdentify {}

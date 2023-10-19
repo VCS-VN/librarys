@@ -4,6 +4,7 @@ package auth;
 service AuthService {
     rpc LoginByUsername(LoginUsernameMessage) returns (TokenResponseMessage);
     rpc LoginByPhoneNumber(LoginPhonenumberMessage) returns (IdentifyResponseMessage);
+    rpc VerifyOTP(OTPMessage) returns (TokenResponseMessage);
 }
 
 message LoginUsernameMessage {
@@ -16,6 +17,7 @@ message TokenResponseMessage {
     optional string accessToken = 1;
     optional string refreshToken = 2;
     optional string chatToken = 3;
+    optional bool verified = 4;
 }
 
 message LoginPhonenumberMessage {
@@ -24,6 +26,11 @@ message LoginPhonenumberMessage {
 }
 
 message IdentifyResponseMessage {
+    optional string identify = 1;
+    optional string otp = 2;
+}
+
+message OTPMessage{
     optional string identify = 1;
     optional string otp = 2;
 }
