@@ -2,10 +2,8 @@ import { IDENTITY_LOGIN_TYPE } from '@/model/auth';
 import { Observable } from 'rxjs';
 
 export interface IAuthService {
-  loginCustomerByUsername(data: ILoginUsername): Observable<ITokenResponse>;
-  loginCustomerByPhoneNumber(
-    data: ILoginPhoneNumber,
-  ): Observable<IIdentifyResponse>;
+  loginByUsername(data: ILoginUsername): Observable<ITokenResponse>;
+  loginByPhoneNumber(data: ILoginPhoneNumber): Observable<IIdentifyResponse>;
 }
 
 export interface ILoginUsername {

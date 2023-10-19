@@ -3,7 +3,7 @@ package auth;
 
 service AuthService {
     rpc LoginByUsername(LoginUsernameMessage) returns (TokenResponseMessage);
-    rpc LoginByPhonenumber(LoginPhonenumberMessage) returns (IdentifyResponseMessage);
+    rpc LoginByPhoneNumber(LoginPhonenumberMessage) returns (IdentifyResponseMessage);
 }
 
 message LoginUsernameMessage {
