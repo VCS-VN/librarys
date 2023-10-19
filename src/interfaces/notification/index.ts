@@ -1,3 +1,4 @@
+import { NOTIFICATION_TYPE } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface INotificationService {
@@ -8,5 +9,5 @@ export interface INotification {
   id?: string;
   message?: string;
   phoneNumber?: string;
-  type?: string;
+  type?: NOTIFICATION_TYPE;
 }
