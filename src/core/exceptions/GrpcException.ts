@@ -15,6 +15,12 @@ export class RpcExceptionFilter implements ExceptionFilter {
     const response = ctx.getResponse<Response>();
 
     switch (error.code) {
+      case 1:
+        return response.status(HttpStatus.EXPECTATION_FAILED).json({
+          message: error.details,
+          statusCode: HttpStatus.BAD_REQUEST,
+        });
+
       case 2:
         return response.status(HttpStatus.EXPECTATION_FAILED).json({
           message: error.details,

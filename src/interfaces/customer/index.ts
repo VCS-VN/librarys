@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 
 export interface ICustomerService {
-  GetCustomerByPhone(data: IGetCustomerByPhoneNumber): Observable<ICustomer>;
+  getCustomerByPhone(data: IGetCustomerByPhoneNumber): Observable<ICustomer>;
 }
 
 export interface ICustomer {
