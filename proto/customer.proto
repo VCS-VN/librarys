@@ -1,0 +1,19 @@
+syntax = "proto3";
+package customer;
+
+import "./base.proto";
+
+service CustomerService {
+    rpc GetCustomerByPhone(GetCustomerByPhoneNumberMessage) returns (CustomerMessage);
+}
+
+message CustomerMessage {
+    optional string id = 1;
+    optional string phoneNumber = 2;
+    optional base.Status status = 3;
+}
+
+message GetCustomerByPhoneNumberMessage {
+    optional CustomerMessage customer = 1;
+    optional bool createIfNotExists = 2;
+}
