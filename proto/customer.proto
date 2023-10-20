@@ -5,6 +5,7 @@ import "./base.proto";
 
 service CustomerService {
     rpc GetCustomerByPhone(GetCustomerByPhoneNumberMessage) returns (CustomerMessage);
+    rpc GetCustomerByID(CustomerMessage) returns (CustomerMessage);
 }
 
 message CustomerMessage {

@@ -22,10 +22,10 @@ export interface ILoginPhoneNumber {
 }
 
 export interface ITokenResponse {
-  accessToken: string;
-  refreshToken: string;
-  chatToken: string;
-  verified: boolean;
+  accessToken?: string;
+  refreshToken?: string;
+  chatToken?: string;
+  verified?: boolean;
 }
 
 export interface IIdentify {
