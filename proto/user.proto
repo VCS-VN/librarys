@@ -2,11 +2,11 @@ syntax="proto3";
 package user;
 
 service UserService {
-    rpc GetUserByAccountId(User) returns (User);
-    rpc GetUserById(User) returns (User);
+    rpc GetUserByAccountId(UserMessage) returns (UserMessage);
+    rpc GetUserById(UserMessage) returns (UserMessage);
 }
 
-message User{
+message UserMessage {
     optional string id = 1;
     optional string phoneNumber = 2;
     optional string accountId = 3;

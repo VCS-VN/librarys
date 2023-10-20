@@ -1,10 +1,13 @@
 import { IDENTITY_LOGIN_TYPE } from '@/model/auth';
 import { Observable } from 'rxjs';
+import { IUser } from '../user';
+import { ICustomer } from '../customer';
 
 export interface IAuthService {
   loginByUsername(data: ILoginUsername): Observable<ITokenResponse>;
   loginByPhoneNumber(data: ILoginPhoneNumber): Observable<IIdentifyResponse>;
   verifyOtp(data: IIdentify): Observable<ITokenResponse>;
+  verifyAccessToken(data: IVerifyToken): Observable<IVerifyResponse>;
 }
 
 export interface ILoginUsername {
@@ -32,3 +35,12 @@ export interface IIdentify {
 }
 
 export interface IIdentifyResponse extends IIdentify {}
+
+export interface IVerifyToken extends ITokenResponse {
+  identityLogin: IDENTITY_LOGIN_TYPE;
+}
+
+export interface IVerifyResponse {
+  user: IUser;
+  customer: ICustomer;
+}
