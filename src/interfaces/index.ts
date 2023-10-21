@@ -6,8 +6,10 @@ export * from './booking';
 
 export * from './user';
 
-export * from './auth'
+export * from './auth';
 
-export * from './customer'
+export * from './customer';
+
+export * from './product';
 
 export interface IEmpty {}
