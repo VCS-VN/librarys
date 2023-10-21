@@ -8,7 +8,7 @@ export function mapProduct(products: any[], resource: any[]): IProduct[] {
       name: product.name,
       quantity: 0,
       price: product.price,
-      variants: this.mapVariants(product.variants),
+      variants: mapVariants(product.variants),
     };
   });
 
@@ -21,7 +21,7 @@ export function mapVariants(variants: any[]): IVariant[] {
       id: v.id,
       type: v.type,
       name: v.name,
-      options: this.mapOptions(v.options),
+      options: mapOptions(v.options),
     };
   });
 
