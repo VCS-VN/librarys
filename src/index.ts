@@ -11,3 +11,5 @@ export * from './enum';
 export * from './transaction-log';
 
 export * from './core';
+
+export * from './utils'
