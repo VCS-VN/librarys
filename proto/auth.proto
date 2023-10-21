@@ -7,8 +7,9 @@ import "./customer.proto";
 service AuthService {
     rpc LoginByUsername(LoginUsernameMessage) returns (TokenResponseMessage);
     rpc LoginByPhoneNumber(LoginPhonenumberMessage) returns (IdentifyResponseMessage);
-    rpc VerifyOTP(OTPMessage) returns (TokenResponseMessage);
+    rpc VerifyLoginOTP(OTPMessage) returns (TokenResponseMessage);
     rpc VerifyAccessToken(AccessTokenVerifyMessage) returns (AccessTokenVerifyResponseMessage);
+    rpc VerifyOTP(OTPMessage) returns (OTPResultMessage);
 }
 
 message LoginUsernameMessage {
@@ -38,6 +39,10 @@ message OTPMessage{
     optional string identify = 1;
     optional string otp = 2;
     optional string identityLogin = 3;
+}
+
+message OTPResultMessage{
+    optional bool verified = 1;
 }
 
 message AccessTokenVerifyMessage{

@@ -6,8 +6,9 @@ import { ICustomer } from '../customer';
 export interface IAuthService {
   loginByUsername(data: ILoginUsername): Observable<ITokenResponse>;
   loginByPhoneNumber(data: ILoginPhoneNumber): Observable<IIdentifyResponse>;
-  verifyOtp(data: IIdentify): Observable<ITokenResponse>;
+  verifyLoginOtp(data: IIdentify): Observable<ITokenResponse>;
   verifyAccessToken(data: IVerifyToken): Observable<IVerifyResponse>;
+  verifyOtp(data: IIdentify): Observable<IVerifyOTPResponse>;
 }
 
 export interface ILoginUsername {
@@ -32,6 +33,10 @@ export interface IIdentify {
   identify: string;
   otp?: string;
   identityLogin: IDENTITY_LOGIN_TYPE;
+}
+
+export interface IVerifyOTPResponse {
+  verify: boolean;
 }
 
 export interface IIdentifyResponse extends IIdentify {}
