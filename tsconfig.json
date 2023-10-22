@@ -17,8 +17,8 @@
       "@vcsepis": [
         "./dist/index"
       ],
-      "@vcsepis/grpc-connect": [
-        "./dist/grpc-connect/index"
+      "@vcsepis/connections": [
+        "./dist/connections/index"
       ]
     },
     "incremental": true,
