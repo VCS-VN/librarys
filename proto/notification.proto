@@ -5,7 +5,7 @@ import "./base.proto";
 
 service NotificationService {
     rpc Send(Noti) returns (Noti);
-    rpc Push(Noti) returns (Noti);
+    rpc Push(Puhser) returns (Noti);
 }
 
 message Noti {
