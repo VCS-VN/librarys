@@ -1,4 +1,4 @@
-export * from './grpc-connect';
+export * from './connections';
 
 export * from './interfaces';
 
