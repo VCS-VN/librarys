@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 
 export interface INotificationService {
   send(data: INotification): Observable<INotification>;
+  push(data: IPusher): Observable<INotification>;
 }
 
 export interface INotification {
@@ -10,4 +11,10 @@ export interface INotification {
   message?: string;
   phoneNumber?: string;
   type?: NOTIFICATION_TYPE;
+}
+
+export interface IPusher {
+  channels?: string[];
+  event?: string;
+  message?: string;
 }

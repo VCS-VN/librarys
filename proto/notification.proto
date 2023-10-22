@@ -5,6 +5,7 @@ import "./base.proto";
 
 service NotificationService {
     rpc Send(Noti) returns (Noti);
+    rpc Push(Noti) returns (Noti);
 }
 
 message Noti {
@@ -12,4 +13,10 @@ message Noti {
     optional string message = 2;
     optional string phoneNumber = 3;
     optional string type = 4;
+}
+
+message Puhser{
+    repeated string channels = 1;
+    optional string event = 2;
+    optional string message = 3;
 }
