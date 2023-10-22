@@ -1,4 +1,4 @@
-export * from './payments';
+export * from '../enum/payment';
 
 export * from './base';
 

@@ -1,5 +1,5 @@
 import { STATUS } from '@/enum';
-import { PAYMENT_TYPE } from '../payments';
+import { PAYMENT_TYPE } from '../../enum/payment';
 
 export interface IStorePayment {
   code?: PAYMENT_TYPE;
