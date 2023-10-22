@@ -36,7 +36,7 @@ export interface IIdentify {
 }
 
 export interface IVerifyOTPResponse {
-  verify: boolean;
+  verified: boolean;
 }
 
 export interface IIdentifyResponse extends IIdentify {}
