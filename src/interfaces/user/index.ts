@@ -1,3 +1,4 @@
+import { Status } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface IUserService {
@@ -10,4 +11,6 @@ export interface IUser {
   phoneNumber?: string;
   accountId?: string;
   customerId?: string;
+  password?: string
+  status?: Status;
 }
