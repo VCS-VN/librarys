@@ -1,6 +1,6 @@
 {
   "name": "@vcsepis/librarys",
-  "version": "0.1.59",
+  "version": "0.1.60",
   "description": "To install dependencies:",
   "main": "dist/index.js",
   "publishConfig": {
@@ -21,6 +21,8 @@
     "@nestjs/mongoose": "^10.0.1",
     "@nestjs/platform-express": "^10.2.6",
     "@nestjs/typeorm": "^10.0.0",
+    "@types/bcryptjs": "^2.4.5",
+    "bcryptjs": "^2.4.3",
     "cache-manager-ioredis-yet": "^1.2.2",
     "dayjs": "^1.11.10",
     "ioredis": "^5.3.2",
