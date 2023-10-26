@@ -2,7 +2,7 @@ import { ICustomer, IProduct } from '@/interfaces';
 import { Status } from '../base';
 import { ORDER_TYPE, PAYMENT_TYPE, STATUS } from '@/enum';
 
-export interface IOrder{
+export interface IOrder {
   customerName?: string;
   customer?: ICustomer;
   products?: IProduct[];
@@ -33,13 +33,16 @@ export interface IInsertOrderHistory {
   changedAt?: Date;
 }
 
-export interface IGetOrders{
+export interface IGetOrder {
   storeId?: string;
   status?: number;
   fromDate?: Date;
   toDate?: Date;
   paymentType?: string;
+  phoneNumber?: string;
+}
+
+export interface IGetOrders extends IGetOrder {
   page?: number;
   limit?: number;
-  phoneNumber?: string;
 }
