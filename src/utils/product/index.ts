@@ -9,6 +9,7 @@ export function mapProduct(products: any[], resource: any[]): IProduct[] {
       quantity: 0,
       price: product.price,
       variants: mapVariants(product.variants),
+      category: product.category,
     };
   });
 
