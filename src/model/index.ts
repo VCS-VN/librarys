@@ -13,3 +13,5 @@ export * from './order';
 export * from './stripe';
 
 export * from './payments';
+
+export * from './messages';
