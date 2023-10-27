@@ -17,8 +17,8 @@ export interface IStore {
   userId?: string;
   address?: string;
   baseURL?: string;
-  lat?: string;
-  long?: string;
+  lat?: number;
+  long?: number;
   orderTypes: { name: string; code: string }[];
   priceId?: string;
 }
