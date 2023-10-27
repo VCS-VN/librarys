@@ -1,5 +1,4 @@
-import { STATUS } from '@/enum';
-import { PAYMENT_RESOURCE, PAYMENT_TYPE, Status } from '@/model';
+import { PAYMENT_TYPE, STATUS } from '@/enum';
 import { Observable } from 'rxjs';
 
 export interface IBookingService {

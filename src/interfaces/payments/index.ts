@@ -1,4 +1,6 @@
-import { PAYMENT_RESOURCE, PAYMENT_TYPE, Status } from '@/model';
+
+import { PAYMENT_RESOURCE, PAYMENT_TYPE } from '@/enum';
+import { Status } from '@/model';
 import { Observable } from 'rxjs';
 
 export interface IPaymentService {
