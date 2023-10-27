@@ -14,4 +14,6 @@ export * from './product';
 
 export * from './store';
 
+export * from './order';
+
 export interface IEmpty {}
