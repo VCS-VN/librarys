@@ -29,3 +29,5 @@ export interface IStorePayment {
 export interface IStoreMetadata {
   payments?: IStorePayment[];
 }
+
+export interface IUpdateOrder {}
