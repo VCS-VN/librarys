@@ -1,7 +1,6 @@
 
 import { PAYMENT_RESOURCE, PAYMENT_TYPE } from '@/enum';
 import { Status } from '@/model';
-import { Observable } from 'rxjs';
 
 export interface IPayment {
   id?: string;
