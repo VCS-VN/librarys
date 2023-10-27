@@ -11,7 +11,7 @@ export interface IAirwallexPaymentResultWebhook {
 }
 
 export interface IAirwallexDataPaymentResult {
-  object: Object;
+  object: IAirwallexObjectPaymentResult;
 }
 
 export interface IAirwallexObjectPaymentResult {
