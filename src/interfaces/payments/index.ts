@@ -3,12 +3,6 @@ import { PAYMENT_RESOURCE, PAYMENT_TYPE } from '@/enum';
 import { Status } from '@/model';
 import { Observable } from 'rxjs';
 
-export interface IPaymentService {
-  add(payment: IPayment): Observable<ICreatePayment>;
-  getByPaymentId(payment: IPayment): Observable<IPayment>;
-  updatePayment(payment: IPayment): Observable<IPayment>;
-}
-
 export interface IPayment {
   id?: string;
   userId?: string;
@@ -26,9 +20,4 @@ export interface IPayment {
   addedMoney?: boolean;
   fees?: number
   net?: number
-}
-
-export interface ICreatePayment extends IPayment {
-  intentId?: string;
-  clientSecret?: string;
 }

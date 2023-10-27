@@ -1,3 +1,8 @@
+import { IPayment } from '@/interfaces';
+
 export * from './air-wallex.wh'
 
-export class PaymentModel {}
+export interface ICreatePayment extends IPayment {
+  intentId?: string;
+  clientSecret?: string;
+}

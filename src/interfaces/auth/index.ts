@@ -1,15 +1,6 @@
-import { IDENTITY_LOGIN_TYPE } from '@/model/auth';
-import { Observable } from 'rxjs';
 import { IUser } from '../user';
 import { ICustomer } from '../customer';
-
-export interface IAuthService {
-  loginByUsername(data: ILoginUsername): Observable<ITokenResponse>;
-  loginByPhoneNumber(data: ILoginPhoneNumber): Observable<IIdentifyResponse>;
-  verifyLoginOtp(data: IIdentify): Observable<ITokenResponse>;
-  verifyAccessToken(data: IVerifyToken): Observable<IVerifyResponse>;
-  verifyOtp(data: IIdentify): Observable<IVerifyOTPResponse>;
-}
+import { IDENTITY_LOGIN_TYPE } from '@/enum';
 
 export interface ILoginUsername {
   username: string;
