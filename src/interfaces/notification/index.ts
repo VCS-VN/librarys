@@ -1,4 +1,4 @@
-import { NOTIFICATION_TYPE } from '@/model';
+import { NOTIFICATION_TYPE } from '@/enum';
 import { Observable } from 'rxjs';
 
 export interface INotificationService {
