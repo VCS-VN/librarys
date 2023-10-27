@@ -10,7 +10,7 @@ export interface IStore {
   slug?: string;
   subscriptionId?: string;
   subscription?: StripeSubscription;
-  status?: Status;
+  status?: STATUS;
   email?: string;
   locationId?: string;
   placeId?: string;
@@ -18,7 +18,9 @@ export interface IStore {
   address?: string;
   baseURL?: string;
   lat?: string;
-  long?: string
+  long?: string;
+  orderTypes: { name: string; code: string }[];
+  priceId?: string;
 }
 
 export interface IStorePayment {
