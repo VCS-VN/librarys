@@ -22,4 +22,7 @@ export interface IStore {
   subscription?: StripeSubscription;
   status?: Status;
   email?: string;
+  locationId?: string;
+  placeId?: string
+  userId?: string
 }
