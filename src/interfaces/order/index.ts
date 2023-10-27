@@ -3,6 +3,7 @@ import { ICustomer } from "../customer";
 import { IProduct } from "../product";
 
 export interface IOrder {
+  _id?: string;
   customerName?: string;
   customer?: ICustomer;
   products?: IProduct[];

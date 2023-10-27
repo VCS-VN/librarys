@@ -17,6 +17,8 @@ export interface IStore {
   userId?: string;
   address?: string;
   baseURL?: string;
+  lat?: string;
+  long?: string
 }
 
 export interface IStorePayment {

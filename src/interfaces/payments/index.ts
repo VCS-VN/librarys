@@ -1,4 +1,3 @@
-
 import { PAYMENT_RESOURCE, PAYMENT_TYPE } from '@/enum';
 import { Status } from '@/model';
 
@@ -17,6 +16,11 @@ export interface IPayment {
   paymentType?: PAYMENT_TYPE;
   paymentId?: string;
   addedMoney?: boolean;
-  fees?: number
-  net?: number
+  fees?: number;
+  net?: number;
+}
+
+export interface ICreatePayment extends IPayment {
+  intentId?: string;
+  clientSecret?: string;
 }
