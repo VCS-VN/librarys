@@ -19,8 +19,3 @@ export interface IPayment {
   fees?: number;
   net?: number;
 }
-
-export interface ICreatePayment extends IPayment {
-  intentId?: string;
-  clientSecret?: string;
-}
