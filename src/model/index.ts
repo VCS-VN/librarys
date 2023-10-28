@@ -13,3 +13,7 @@ export * from './messages';
 export * from './order';
 
 export * from './store';
+
+export * from './category';
+
+export * from './product';
