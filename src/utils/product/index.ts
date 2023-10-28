@@ -3,6 +3,12 @@ import { IOption, IProduct, IVariant } from '@/interfaces';
 export function mapProduct(products: any[], resource: any[]): IProduct[] {
   const result = (resource || [])?.map((p) => {
     const product = products.find((pr) => pr?.id === p.id);
+    delete product.category.store?.metadata;
+    delete product.category.store?.subscription;
+    delete product.category.store?.subscriptionId;
+    delete product.category.store?.locationId;
+    delete product.category.store?.placeId;
+    delete product.category.store?.readerId;
     return {
       id: product.id,
       name: product.name,
