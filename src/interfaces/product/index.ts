@@ -1,3 +1,5 @@
+import { ICategory } from '../category';
+
 export interface IOption {
   id?: string;
   value?: string;
@@ -22,4 +24,5 @@ export interface IProduct {
   total?: number;
   totalRemove?: number;
   note?: string;
+  category: ICategory;
 }
