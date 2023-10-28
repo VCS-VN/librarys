@@ -34,3 +34,23 @@ export interface IStorePayment {
 export interface IStoreMetadata {
   payments?: IStorePayment[];
 }
+
+export interface ICreateStore {
+  id?: string;
+  name?: string;
+  metadata?: IStoreMetadata;
+  slug?: string;
+  subscriptionId?: string;
+  status?: STATUS;
+  email?: string;
+  locationId?: string;
+  placeId?: string;
+  userId?: string;
+  address?: string;
+  baseURL?: string;
+  lat?: number;
+  long?: number;
+  orderTypes: { name: string; code: string }[];
+  priceId?: string;
+  readerId?: string;
+}
