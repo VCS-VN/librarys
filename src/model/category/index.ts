@@ -4,3 +4,7 @@ export interface IGetCategoriesQueryModel {
   page?: number;
   storeId?: string;
 }
+
+export interface ICreateCategory {
+  name: string;
+}
