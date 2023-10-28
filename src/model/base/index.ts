@@ -69,6 +69,7 @@ export function generateEntityId(idProperty: string, prefix?: string): string {
 
 export interface IPaginationResponse<T> {
   data: T;
-  page: number;
-  limit: number;
+  page?: number;
+  limit?: number;
+  total?: number;
 }
