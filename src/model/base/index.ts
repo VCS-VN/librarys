@@ -66,3 +66,9 @@ export function generateEntityId(idProperty: string, prefix?: string): string {
   prefix = prefix ? `${prefix}_` : '';
   return `${prefix}${id}`;
 }
+
+export interface IPaginationResponse<T> {
+  data: T;
+  page: number;
+  limit: number;
+}
