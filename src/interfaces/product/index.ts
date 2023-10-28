@@ -1,3 +1,4 @@
+import { Status } from '@/model';
 import { ICategory } from '../category';
 
 export interface IOption {
@@ -24,5 +25,7 @@ export interface IProduct {
   total?: number;
   totalRemove?: number;
   note?: string;
-  category: ICategory;
+  category?: ICategory;
+  descriptions?: string
+  status?: Status
 }

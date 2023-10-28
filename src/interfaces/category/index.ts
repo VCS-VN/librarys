@@ -6,5 +6,6 @@ export interface ICategory {
   name?: string;
   status?: Status;
   createdAt?: Date;
-  products: IProduct[];
+  sortIndex?: number;
+  products?: IProduct[];
 }
