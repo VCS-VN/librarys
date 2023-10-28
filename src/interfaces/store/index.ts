@@ -21,6 +21,7 @@ export interface IStore {
   long?: number;
   orderTypes: { name: string; code: string }[];
   priceId?: string;
+  readerId?: string;
 }
 
 export interface IStorePayment {

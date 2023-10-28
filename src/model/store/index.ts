@@ -20,4 +20,5 @@ export class IUpdateStore {
   long?: number;
   orderTypes: { name: string; code: string }[];
   priceId?: string;
+  readerId?: string;
 }
