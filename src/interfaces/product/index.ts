@@ -26,6 +26,6 @@ export interface IProduct {
   totalRemove?: number;
   note?: string;
   category?: ICategory;
-  descriptions?: string
-  status?: Status
+  descriptions?: string;
+  status?: Status;
 }

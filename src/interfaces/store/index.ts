@@ -1,5 +1,5 @@
 import { PAYMENT_TYPE, STATUS } from '@/enum';
-import { Status, StripeSubscription } from '@/model';
+import { StripeSubscription } from '@/model';
 
 export interface IStoreService {}
 

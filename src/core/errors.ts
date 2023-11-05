@@ -8,5 +8,5 @@ export enum ERRORS {
   '006' = 'Unauthorized',
   '007' = 'Bad Request',
   '008' = 'Request Failed Outside',
-  'SERVER' = 'Error from server'
+  'SERVER' = 'Error from server',
 }
