@@ -16,5 +16,5 @@ export interface INotification {
 export interface IPusher {
   channels?: string[];
   event?: string;
-  message?: string;
+  message?: any;
 }
