@@ -11,6 +11,7 @@ export interface IUser {
   phoneNumber?: string;
   accountId?: string;
   customerId?: string;
-  password?: string
+  password?: string;
   status?: Status;
+  username?: string;
 }
