@@ -2,6 +2,7 @@ import { IVariant } from '@/interfaces';
 
 export interface IGetProductsModel {
   category?: string;
+  categoryId?: string;
   keyword?: string;
   limit?: number;
   page?: number;
@@ -11,15 +12,10 @@ export interface IGetProductsModel {
 
 export interface ICreateProduct {
   name?: string;
-
   categoryId?: string;
-
   variants?: IVariant[];
-
   images: IProductImage[];
-
   descriptions?: string;
-
   note?: string;
   price?: number;
 }
