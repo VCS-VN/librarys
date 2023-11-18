@@ -1,13 +1,13 @@
-import { ORDER_TYPE, PAYMENT_TYPE, STATUS } from "@/enum";
-import { ICustomer } from "../customer";
-import { IProduct } from "../product";
+import { ORDER_TYPE, PAYMENT_TYPE, STATUS } from '@/enum';
+import { ICustomer } from '../customer';
+import { IProduct } from '../product';
 
 export interface IOrder {
   _id?: string;
   customerName?: string;
   customer?: ICustomer;
   products?: IProduct[];
-  status?: STATUS;
+  statusId?: STATUS;
   transactionId?: string;
   paymentType?: PAYMENT_TYPE;
   type?: ORDER_TYPE;

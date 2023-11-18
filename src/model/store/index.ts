@@ -9,7 +9,7 @@ export class IUpdateStore {
   slug?: string;
   subscriptionId?: string;
   subscription?: StripeSubscription;
-  status?: STATUS;
+  statusId?: STATUS;
   email?: string;
   locationId?: string;
   placeId?: string;

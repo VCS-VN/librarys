@@ -14,7 +14,7 @@ export interface IBooking {
   paymentType?: PAYMENT_TYPE;
   userId?: string;
   storeId?: string;
-  status?: STATUS;
+  statusId?: STATUS;
 }
 
 export interface ICreateBooking extends IBooking {

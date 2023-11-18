@@ -1,5 +1,5 @@
-import { Status } from '@/model';
 import { ICategory } from '../category';
+import { STATUS } from '@/enum';
 
 export interface IOption {
   id?: string;
@@ -27,5 +27,5 @@ export interface IProduct {
   note?: string;
   category?: ICategory;
   descriptions?: string;
-  status?: Status;
+  statusId?: STATUS;
 }

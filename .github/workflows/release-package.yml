@@ -37,7 +37,7 @@ jobs:
       - name: checkout to repository
         uses: actions/checkout@v4
       - name: install and build
-        run: npm ci --save-dev typescript
+        run: npm ci
       - name: publish to registry
         uses: actions/setup-node@v3
         with:

@@ -1,14 +1,14 @@
-import { Status } from '../base';
+import { STATUS } from '@/enum';
 
 export interface IInsertOrderHistory {
   orderCode?: string;
-  status: Status;
+  statusId: STATUS;
   changedAt?: Date;
 }
 
 export interface IGetOrder {
   storeId?: string;
-  status?: number;
+  statusId?: number;
   fromDate?: Date;
   toDate?: Date;
   paymentType?: string;
@@ -22,7 +22,7 @@ export interface IGetOrders extends IGetOrder {
 
 export interface IUpdateOrder {
   code?: string;
-  status?: number;
+  statusId?: number;
   paymentType?: string;
   note?: string;
 }

@@ -1,4 +1,4 @@
-import { Status } from '@/model';
+import { STATUS } from '@/enum';
 import { Observable } from 'rxjs';
 
 export interface IUserService {
@@ -12,6 +12,6 @@ export interface IUser {
   accountId?: string;
   customerId?: string;
   password?: string;
-  status?: Status;
+  statusId?: STATUS;
   username?: string;
 }

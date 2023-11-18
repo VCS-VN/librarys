@@ -1,5 +1,4 @@
-import { PAYMENT_RESOURCE, PAYMENT_TYPE } from '@/enum';
-import { Status } from '@/model';
+import { PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
 
 export interface IPayment {
   id?: string;
@@ -8,7 +7,7 @@ export interface IPayment {
   countryId?: number;
   description?: string;
   descriptor?: string;
-  status?: Status;
+  statusId?: STATUS;
   resource?: PAYMENT_RESOURCE;
   provider?: string;
   type?: string;

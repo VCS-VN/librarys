@@ -10,7 +10,7 @@ export interface IStore {
   slug?: string;
   subscriptionId?: string;
   subscription?: StripeSubscription;
-  status?: STATUS;
+  statusId?: STATUS;
   email?: string;
   locationId?: string;
   placeId?: string;
@@ -27,7 +27,7 @@ export interface IStore {
 export interface IStorePayment {
   code?: PAYMENT_TYPE;
   name?: string;
-  status?: STATUS;
+  statusId?: STATUS;
   icon?: string;
 }
 
@@ -41,7 +41,7 @@ export interface ICreateStore {
   metadata?: IStoreMetadata;
   slug?: string;
   subscriptionId?: string;
-  status?: STATUS;
+  statusId?: STATUS;
   email?: string;
   locationId?: string;
   placeId?: string;
