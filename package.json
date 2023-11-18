@@ -1,6 +1,6 @@
 {
   "name": "@vcsepis/librarys",
-  "version": "0.1.93",
+  "version": "0.1.94",
   "description": "To install dependencies:",
   "main": "dist/indesx.js",
   "publishConfig": {
