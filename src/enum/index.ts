@@ -9,3 +9,5 @@ export * from './auth';
 export * from './notification';
 
 export * from './refund';
+
+export * from './product';
