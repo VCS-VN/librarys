@@ -1,1 +1,1 @@
-export * from './ResponseExceptionFilter'
+export * from './ResponseExceptionFilter';
