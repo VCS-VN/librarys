@@ -26,4 +26,5 @@ export interface IOrder {
   address: string;
   resourceType?: string;
   refundStatus?: STATUS;
+  storeSlug: string;
 }
