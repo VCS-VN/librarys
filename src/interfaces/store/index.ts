@@ -19,7 +19,7 @@ export interface IStore {
   baseURL?: string;
   lat?: number;
   long?: number;
-  orderTypes: { name: string; code: string }[];
+  orderTypes?: { name: string; code: string }[];
   priceId?: string;
   readerId?: string;
 }
