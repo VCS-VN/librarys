@@ -7,7 +7,7 @@ export interface IOrder {
   customerName?: string;
   customer?: ICustomer;
   products?: IProduct[];
-  statusId?: STATUS;
+  status?: STATUS;
   transactionId?: string;
   paymentType?: PAYMENT_TYPE;
   type?: ORDER_TYPE;
