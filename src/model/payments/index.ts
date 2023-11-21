@@ -2,6 +2,8 @@ import { PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
 
 export * from './air-wallex.wh';
 
+export * from './stripe';
+
 export interface ICreatePayment {
   id?: string;
   userId?: string;
