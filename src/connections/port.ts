@@ -17,3 +17,5 @@ export const ORDER_PORT = process.env.ORDER_PORT || 9000;
 export const THIRD_PARTY_PORT = process.env.THIRD_PARTY_PORT || 9000;
 
 export const DELIVERY_PORT = process.env.DELIVERY_PORT || 9000;
+
+export const LOG_PORT = process.env.LOG_PORT || 9000;

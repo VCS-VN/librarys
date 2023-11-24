@@ -12,4 +12,6 @@ export * from './refund';
 
 export * from './product';
 
-export * from './log'
+export * from './log';
+
+export * from './delivery';
