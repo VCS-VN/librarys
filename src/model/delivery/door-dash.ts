@@ -23,7 +23,7 @@ export interface IDoorDashBusiness {
 export interface ICreateDoorDashStore {
   externalStoreId: string;
   name: string;
-  phone_number: string;
+  phoneNumber: string;
   address: string;
 }
 
