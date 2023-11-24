@@ -13,3 +13,5 @@ export const USER_TOPIC = 'amp.service.user.topic';
 export const THIRD_PARTY_TOPIC = 'amp.service.3rd-party.topic';
 
 export const NOTIFICATION_TOPIC = 'amp.service.notification.topic';
+
+export const LOG_TOPIC = 'amp.service.log.topic';
