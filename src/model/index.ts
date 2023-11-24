@@ -21,3 +21,5 @@ export * from './product';
 export * from './log';
 
 export * from './delivery';
+
+export * from './user';

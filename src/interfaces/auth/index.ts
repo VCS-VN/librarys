@@ -1,4 +1,4 @@
-import { IUser } from '../user';
+import { IUser } from '../../model/user';
 import { ICustomer } from '../customer';
 import { IDENTITY_LOGIN_TYPE } from '@/enum';
 

@@ -1,10 +1,4 @@
 import { STATUS } from '@/enum';
-import { Observable } from 'rxjs';
-
-export interface IUserService {
-  getUserByAccountId(data: IUser): Observable<IUser>;
-  getUserById(data: IUser): Observable<IUser>;
-}
 
 export interface IUser {
   id?: string;
@@ -14,4 +8,12 @@ export interface IUser {
   password?: string;
   statusId?: STATUS;
   username?: string;
+  businessData?: IBusinessData;
+}
+
+export interface IBusinessData {
+  doorDash: {
+    id: string;
+    displayName: string;
+  };
 }

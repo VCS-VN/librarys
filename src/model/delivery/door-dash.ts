@@ -1,10 +1,3 @@
-export interface ICreateBusiness {
-  externalBusinessId: string;
-  name: string;
-  description?: string;
-  activationStatus?: string;
-}
-
 export interface IDoorDashBusiness {
   name: string;
   description: string;
