@@ -17,4 +17,5 @@ export interface IPayment {
   addedMoney?: boolean;
   fees?: number;
   net?: number;
+  storeSlug?: string;
 }
