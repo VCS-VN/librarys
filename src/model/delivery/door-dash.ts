@@ -21,6 +21,7 @@ export interface IDoorDashBusiness {
 }
 
 export interface ICreateDoorDashStore {
+  externalBusinessId?: string;
   externalStoreId: string;
   name: string;
   phoneNumber: string;
