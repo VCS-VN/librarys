@@ -11,3 +11,5 @@ export * from './notification';
 export * from './refund';
 
 export * from './product';
+
+export * from './log'
