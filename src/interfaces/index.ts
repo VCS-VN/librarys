@@ -8,8 +8,6 @@ export * from './customer';
 
 export * from './product';
 
-export * from './store';
-
 export * from './order';
 
 export * from './product';
