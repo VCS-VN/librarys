@@ -12,8 +12,8 @@ export interface IUser {
 }
 
 export interface IBusinessData {
-  doorDash: {
-    id: string;
-    displayName: string;
+  doorDash?: {
+    id?: string;
+    displayName?: string;
   };
 }
