@@ -35,7 +35,7 @@ export interface IDoorDashStore {
   phoneNumber?: string;
   address?: string;
   status?: string;
-  is_test?: string;
-  created_at?: Date;
-  last_updated_at?: Date;
+  isTest?: string;
+  createdAt?: Date;
+  lastUpdatedAt?: Date;
 }
