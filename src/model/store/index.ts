@@ -6,7 +6,8 @@ import { IDoorDashStore } from '../delivery';
 export class IUpdateStore {
   id?: string;
   name?: string;
-  metadata?: IStoreMetadata;
+  paymentMetadata?: IStorePaymentMetadata;
+  deliveryMetadata?: IStoreDeliveryMetadata;
   slug?: string;
   subscriptionId?: string;
   subscription?: StripeSubscription;
@@ -29,10 +30,12 @@ export interface IStoreService {}
 export interface IStore {
   id?: string;
   name?: string;
-  metadata?: IStoreMetadata;
+  paymentMetadata?: IStorePaymentMetadata;
+  deliveryMetadata?: IStoreDeliveryMetadata;
   slug?: string;
   subscriptionId?: string;
   subscription?: StripeSubscription;
+  stripeCustomerId?: string;
   statusId?: STATUS;
   email?: string;
   locationId?: string;
@@ -54,9 +57,15 @@ export interface IStorePayment {
   icon?: string;
 }
 
-export interface IStoreMetadata {
+export interface IStorePaymentMetadata {
   payments?: IStorePayment[];
   delivery?: {
+    doorDash?: IDoorDashStore;
+  };
+}
+
+export interface IStoreDeliveryMetadata {
+  deliveries?: {
     doorDash?: IDoorDashStore;
   };
 }
@@ -64,7 +73,8 @@ export interface IStoreMetadata {
 export interface ICreateStore {
   id?: string;
   name?: string;
-  metadata?: IStoreMetadata;
+  paymentMetadata?: IStorePaymentMetadata;
+  deliveryMetadata?: IStoreDeliveryMetadata;
   slug?: string;
   subscriptionId?: string;
   statusId?: STATUS;

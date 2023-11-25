@@ -4,7 +4,6 @@ export interface IUser {
   id?: string;
   phoneNumber?: string;
   accountId?: string;
-  customerId?: string;
   password?: string;
   statusId?: STATUS;
   username?: string;
