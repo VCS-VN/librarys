@@ -32,7 +32,8 @@ on:
 jobs:
   build-and-deploy:
     name: Build and deploy new version
-    runs-on: ubuntu-latest
+    runs-on: 
+      - hosted-runner
     steps:
       - name: checkout to repository
         uses: actions/checkout@v4
