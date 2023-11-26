@@ -1,5 +1,5 @@
 import { STATUS } from '@/enum';
-import { IProduct } from '../product';
+import { IStore, IProduct } from '@/model';
 
 export interface IGetCategoriesQueryModel {
   keyword?: string;
@@ -19,4 +19,5 @@ export interface ICategory {
   createdAt?: Date;
   sortIndex?: number;
   products?: IProduct[];
+  store?: IStore;
 }
