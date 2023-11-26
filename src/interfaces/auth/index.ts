@@ -1,5 +1,4 @@
-import { IUser } from '../../model/user';
-import { ICustomer } from '../customer';
+import { ICustomer, IUser } from '@/model';
 import { IDENTITY_LOGIN_TYPE } from '@/enum';
 
 export interface ILoginUsername {

@@ -1,4 +1,4 @@
-import { IOption, IProduct, IVariant } from '@/interfaces';
+import { IOption, IProduct, IVariant } from '@/model';
 
 export function mapProduct(products: any[], resource: any[]): IProduct[] {
   const result = (resource || [])?.map((p) => {
