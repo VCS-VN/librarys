@@ -24,6 +24,7 @@ export interface IPayment {
   storeSlug?: string;
   intentId?: string;
   clientSecret?: string;
+  addPaymentFees?: boolean;
 }
 
 export interface ICreatePayment {
