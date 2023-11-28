@@ -20,11 +20,12 @@ export interface IDeliveryLocation {
 export interface IDelivery {
   from?: IDeliveryLocation;
   to?: IDeliveryLocation;
-  orders?: IOrder[];
-  deliveryFee?: number;
-  deliveryType?: string;
-  deliveryProvider?: DELIVERY_PROVIDER;
+  orders?: IOrder;
+  fees?: number;
+  type?: string;
+  provider?: DELIVERY_PROVIDER;
   status?: STATUS;
+  code?: string;
   createdAt?: Date;
   deliveredAt?: Date;
 }
