@@ -20,7 +20,7 @@ export interface IDeliveryLocation {
 export interface IDelivery {
   from?: IDeliveryLocation;
   to?: IDeliveryLocation;
-  orders?: IOrder;
+  order?: IOrder;
   fees?: number;
   type?: string;
   provider?: DELIVERY_PROVIDER;
