@@ -30,4 +30,5 @@ export interface IDelivery {
   deliveredAt?: Date;
   tip?: number;
   storeId?: string;
+  metadata?: any;
 }
