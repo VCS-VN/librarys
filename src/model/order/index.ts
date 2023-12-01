@@ -26,6 +26,7 @@ export interface IOrder {
   resourceType?: string;
   refundStatus?: STATUS;
   storeSlug: string;
+  delivery?: IDeliveryInfo;
 }
 
 export interface IInsertOrderHistory {
@@ -53,4 +54,10 @@ export interface IUpdateOrder {
   statusId?: number;
   paymentType?: string;
   note?: string;
+}
+
+export interface IDeliveryInfo {
+  to?: string;
+  phoneNumber?: string;
+  address?: string;
 }

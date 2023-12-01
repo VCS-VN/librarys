@@ -1,5 +1,4 @@
 import { DELIVERY_PROVIDER, STATUS } from '@/enum';
-import { IOrder } from '@/model';
 
 export * from './door-dash';
 
@@ -20,7 +19,7 @@ export interface IDeliveryLocation {
 export interface IDelivery {
   from?: IDeliveryLocation;
   to?: IDeliveryLocation;
-  order?: IOrder;
+  orderCode?: string;
   fees?: number;
   type?: string;
   provider?: DELIVERY_PROVIDER;
