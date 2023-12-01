@@ -13,10 +13,10 @@ export enum PAYMENT_TYPE {
 
 export enum PAYMENT_RESOURCE {
   NORMAL = 'normal',
-  E_COMMERCE_STORE_ORDER = 'e_commerce_store_order',
-  E_COMMERCE_CUSTOMER_ORDER = 'e_commerce_customer_order',
-  E_COMMERCE_CUSTOMER_BOOKING = 'e_commerce_customer_booking',
-  E_COMMERCE_STORE_BOOKING = 'e_commerce_store_booking',
+  STORE_ORDER = 'store_order',
+  CUSTOMER_ORDER = 'customer_order',
+  CUSTOMER_BOOKING = 'customer_booking',
+  STORE_BOOKING = 'store_booking',
 }
 
 export enum WITHDRAW_TYPE {
@@ -24,11 +24,11 @@ export enum WITHDRAW_TYPE {
 }
 
 export enum PAYOUT_RESOURCE {
-  E_COMMERCE_STORE = 'e_commerce_store',
+  STORE = 'store',
 }
 
 export enum REFUND_RESOURCE {
-  E_COMMERCE_STORE = 'e_commerce_store',
+  STORE = 'store',
 }
 
 export enum PAYMENT_PROVIDER_ENUM {
