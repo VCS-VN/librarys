@@ -31,4 +31,5 @@ export interface IDelivery {
   tip?: number;
   storeId?: string;
   metadata?: any;
+  cancelReason?: string;
 }
