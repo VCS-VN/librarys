@@ -62,4 +62,5 @@ export interface IDeliveryInfo {
   address?: string;
   provider?: string;
   name?: string;
+  tip?: number;
 }
