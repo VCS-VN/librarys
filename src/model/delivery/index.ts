@@ -28,4 +28,5 @@ export interface IDelivery {
   code?: string;
   createdAt?: Date;
   deliveredAt?: Date;
+  tip?: number;
 }
