@@ -13,14 +13,14 @@ export enum PAYMENT_TYPE {
 
 export enum PAYMENT_RESOURCE {
   NORMAL = 'normal',
-  STORE_ORDER = 'store_order',
-  CUSTOMER_ORDER = 'customer_order',
-  CUSTOMER_BOOKING = 'customer_booking',
-  STORE_BOOKING = 'store_booking',
+  STORE_ORDER = 'store-order',
+  CUSTOMER_ORDER = 'customer-order',
+  CUSTOMER_BOOKING = 'customer-booking',
+  STORE_BOOKING = 'store-booking',
 }
 
 export enum WITHDRAW_TYPE {
-  AIR_WALLEX = 'AIR_WALLEX',
+  AIR_WALLEX = 'air-wallex',
 }
 
 export enum PAYOUT_RESOURCE {
@@ -28,10 +28,13 @@ export enum PAYOUT_RESOURCE {
 }
 
 export enum REFUND_RESOURCE {
-  STORE = 'store',
+  STORE_ORDER = 'store-order',
+  CUSTOMER_ORDER = 'customer-order',
+  CUSTOMER_BOOKING = 'customer-booking',
+  STORE_BOOKING = 'store-booking',
 }
 
-export enum PAYMENT_PROVIDER_ENUM {
-  AIR_WALLEX = 'air_wallex',
+export enum PAYMENT_PROVIDER {
+  AIR_WALLEX = 'air-wallex',
   STRIPE = 'stripe',
 }
