@@ -22,10 +22,10 @@ export interface IOrder {
   vat?: number;
   cash?: number;
   table?: string;
-  address: string;
+  address?: string;
   resourceType?: string;
   refundStatus?: STATUS;
-  storeSlug: string;
+  storeSlug?: string;
   delivery?: IDeliveryInfo;
 }
 
