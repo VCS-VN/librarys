@@ -81,4 +81,5 @@ export interface ITransaction {
   createdAt?: Date;
   updatedAt?: Date;
   intentId?: string;
+  storeId?: string;
 }
