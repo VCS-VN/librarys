@@ -44,4 +44,5 @@ export interface ICreatePayment {
   addedMoney?: boolean;
   fees?: number;
   net?: number;
+  applicationFees?: number;
 }

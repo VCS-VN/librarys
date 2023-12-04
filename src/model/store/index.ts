@@ -46,6 +46,7 @@ export interface IStore {
   readerId?: string;
   businessType?: string;
   phoneNumber?: string;
+  servicePercent?: number;
 }
 
 export interface IUpdateStore extends IStore {}

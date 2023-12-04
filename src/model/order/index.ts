@@ -64,3 +64,21 @@ export interface IDeliveryInfo {
   name?: string;
   tip?: number;
 }
+
+export interface ITransaction {
+  id?: string;
+  orderId?: string;
+  userId?: string;
+  transactionId?: string;
+  amount?: number;
+  net?: number;
+  vat?: number;
+  paymentType: PAYMENT_TYPE;
+  deliveryFees?: number;
+  serviceFees?: number;
+  paymentFees?: number;
+  status?: STATUS;
+  createdAt?: Date;
+  updatedAt?: Date;
+  intentId?: string;
+}
