@@ -1,5 +1,5 @@
-import { ORDER_TYPE, PAYMENT_TYPE, STATUS } from '@/enum';
-import { ICustomer, IProduct } from '@/model';
+import { ORDER_TYPE, PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
+import { ICustomer, IProduct, IStore } from '@/model';
 
 export interface IOrder {
   _id?: string;
@@ -67,7 +67,6 @@ export interface IDeliveryInfo {
 
 export interface ITransaction {
   id?: string;
-  orderId?: string;
   userId?: string;
   transactionId?: string;
   amount?: number;
@@ -81,5 +80,6 @@ export interface ITransaction {
   createdAt?: Date;
   updatedAt?: Date;
   intentId?: string;
-  storeId?: string;
+  store?: IStore;
+  resource?: PAYMENT_RESOURCE;
 }
