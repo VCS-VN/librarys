@@ -1,7 +1,5 @@
 export * from './connections';
 
-export * from './interfaces';
-
 export * from './model';
 
 export * from './enum';

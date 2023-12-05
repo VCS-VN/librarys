@@ -72,7 +72,7 @@ export interface ITransaction {
   amount?: number;
   net?: number;
   vat?: number;
-  paymentType: PAYMENT_TYPE;
+  paymentType?: PAYMENT_TYPE;
   deliveryFees?: number;
   serviceFees?: number;
   paymentFees?: number;
