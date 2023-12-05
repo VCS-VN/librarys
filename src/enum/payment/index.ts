@@ -20,7 +20,7 @@ export enum PAYMENT_RESOURCE {
 }
 
 export enum WITHDRAW_TYPE {
-  AIR_WALLEX = 'air-wallex',
+  AIR_WALLEX = 'AIR_WALLEX',
 }
 
 export enum PAYOUT_RESOURCE {
@@ -35,6 +35,6 @@ export enum REFUND_RESOURCE {
 }
 
 export enum PAYMENT_PROVIDER {
-  AIR_WALLEX = 'air-wallex',
-  STRIPE = 'stripe',
+  AIR_WALLEX = 'AIR_WALLEX',
+  STRIPE = 'STRIPE',
 }
