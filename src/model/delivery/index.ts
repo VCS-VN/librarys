@@ -32,4 +32,5 @@ export interface IDelivery {
   storeId?: string;
   metadata?: any;
   cancelReason?: string;
+  prepareTime?: number;
 }
