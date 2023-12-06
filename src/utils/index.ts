@@ -4,4 +4,4 @@ export * from './string';
 
 export * from './product';
 
-export * from './auth'
+export * from './auth';

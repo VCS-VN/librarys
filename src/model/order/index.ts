@@ -80,7 +80,7 @@ export interface ITransaction {
   status?: STATUS;
   createdAt?: Date;
   updatedAt?: Date;
-  intentId?: string;
+  paymentId?: string;
   store?: IStore;
   resource?: PAYMENT_RESOURCE;
 }
