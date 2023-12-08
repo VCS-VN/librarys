@@ -35,5 +35,5 @@ export interface IDelivery {
   prepareTime?: number;
   driver?: string;
   driverPhoneNumber?: string;
-  driverId?: string
+  driverId?: string;
 }
