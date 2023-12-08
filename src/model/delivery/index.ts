@@ -33,4 +33,7 @@ export interface IDelivery {
   metadata?: any;
   cancelReason?: string;
   prepareTime?: number;
+  driver?: string;
+  driverPhoneNumber?: string;
+  driverId?: string
 }
