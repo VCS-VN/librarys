@@ -1,3 +1,5 @@
+export * from './door-dash';
+
 export enum DELIVERY_PROVIDER {
   DOOR_DASH = 'DOOR_DASH',
   UBER = 'UBER',
