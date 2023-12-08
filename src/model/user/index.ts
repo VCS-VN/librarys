@@ -15,4 +15,5 @@ export interface IBusinessData {
     id?: string;
     displayName?: string;
   };
+  name?: string;
 }
