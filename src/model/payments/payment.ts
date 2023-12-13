@@ -21,6 +21,7 @@ export interface IPayment {
   intentId?: string;
   clientSecret?: string;
   addPaymentFees?: boolean;
+  approvedAt?: Date;
 }
 
 export interface ICreatePayment {
