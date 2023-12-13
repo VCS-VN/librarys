@@ -6,7 +6,7 @@ export interface IRefund {
   currency?: string;
   amount?: number;
   transactionId?: string;
-  type?: REFUND_TYPE;
+  refundType?: REFUND_TYPE;
   refundId?: string;
   paymentId?: string;
   paymentAttemptId?: string;

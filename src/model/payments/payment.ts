@@ -34,7 +34,6 @@ export interface ICreatePayment {
   statusId?: STATUS;
   resource?: PAYMENT_RESOURCE;
   provider?: string;
-  type?: string;
   currency?: string;
   paymentType?: PAYMENT_TYPE;
   paymentId?: string;
