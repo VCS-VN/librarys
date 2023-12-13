@@ -1,5 +1,7 @@
 export const ORDER_TOPIC = 'amp.service.order.topic';
 
+export const TRANSACTION_TOPIC = 'amp.service.transaction.topic';
+
 export const PAYMENT_TOPIC = 'amp.service.payment.topic';
 
 export const STORE_TOPIC = 'amp.service.store.topic';
