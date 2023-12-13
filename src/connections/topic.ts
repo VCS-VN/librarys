@@ -4,6 +4,8 @@ export const TRANSACTION_TOPIC = 'amp.service.transaction.topic';
 
 export const PAYMENT_TOPIC = 'amp.service.payment.topic';
 
+export const REFUND_TOPIC = 'amp.service.refund.topic';
+
 export const STORE_TOPIC = 'amp.service.store.topic';
 
 export const PRODUCT_TOPIC = 'amp.service.product.topic';
