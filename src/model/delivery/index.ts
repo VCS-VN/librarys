@@ -36,4 +36,5 @@ export interface IDelivery {
   driver?: string;
   driverPhoneNumber?: string;
   driverId?: string;
+  recreateCount?: number;
 }

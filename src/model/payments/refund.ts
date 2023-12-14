@@ -1,8 +1,8 @@
-import { PAYMENT_PROVIDER, REFUND_RESOURCE, REFUND_TYPE } from '@/enum';
+import { PAYMENT_PROVIDER, REFUND_RESOURCE, REFUND_TYPE, STATUS } from '@/enum';
 
 export interface IRefund {
   id?: string;
-  statusId?: string;
+  statusId?: STATUS;
   currency?: string;
   amount?: number;
   transactionId?: string;
