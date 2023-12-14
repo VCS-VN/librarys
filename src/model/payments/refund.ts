@@ -10,6 +10,7 @@ export interface IRefund {
   refundId?: string;
   paymentId?: string;
   paymentAttemptId?: string;
+  intentId?: string;
   resource?: REFUND_RESOURCE;
   provider?: PAYMENT_PROVIDER;
 }
