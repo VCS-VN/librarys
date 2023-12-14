@@ -131,3 +131,31 @@ export interface RiskControlOptions {
   skip_risk_processing: boolean;
   tra_applicable: boolean;
 }
+
+export interface IAirwallexRefundResultWebhook {
+  id: string;
+  name: string;
+  account_id: string;
+  accountId: string;
+  data: RefundData;
+  created_at: string;
+  createdAt: string;
+  version: string;
+  sourceId: string;
+}
+
+interface RefundData {
+  object: ObjectRefundData;
+}
+
+interface ObjectRefundData {
+  amount: number;
+  created_at: string;
+  currency: string;
+  id: string;
+  payment_attempt_id: string;
+  payment_intent_id: string;
+  request_id: string;
+  status: string;
+  updated_at: string;
+}
