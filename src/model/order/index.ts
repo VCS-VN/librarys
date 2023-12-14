@@ -77,7 +77,7 @@ export interface ITransaction {
   serviceFees?: number;
   paymentFees?: number;
   merchantFees?: number;
-  status?: STATUS;
+  statusId?: STATUS;
   createdAt?: Date;
   updatedAt?: Date;
   paymentId?: string;
