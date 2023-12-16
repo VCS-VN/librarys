@@ -9,6 +9,7 @@ export interface IGetProductsModel {
   page?: number;
   storeId?: string;
   ids?: string[];
+  statusId: STATUS;
 }
 
 export interface ICreateProduct {

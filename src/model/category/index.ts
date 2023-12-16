@@ -6,6 +6,7 @@ export interface IGetCategoriesQueryModel {
   limit?: number;
   page?: number;
   storeId?: string;
+  statusId?: STATUS;
 }
 
 export interface ICreateCategory {
