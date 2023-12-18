@@ -21,3 +21,5 @@ export const NOTIFICATION_TOPIC = 'amp.service.notification.topic';
 export const LOG_TOPIC = 'amp.service.log.topic';
 
 export const DELIVERY_TOPIC = 'amp.service.delivery.topic';
+
+export const ASSETS_TOPIC = 'amp.service.assets.topic';
