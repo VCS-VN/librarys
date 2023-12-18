@@ -20,7 +20,7 @@ export interface ICreateProduct {
   descriptions?: string;
   note?: string;
   price?: number;
-  minLength?: number
+  minLength?: number;
 }
 
 export interface IOption {
