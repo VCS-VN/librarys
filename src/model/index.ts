@@ -30,4 +30,4 @@ export * from './booking';
 
 export * from './auth';
 
-export interface IEmpty {}
+export * from './assets';
