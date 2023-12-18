@@ -16,14 +16,10 @@ export interface ICreateProduct {
   name?: string;
   categoryId?: string;
   variants?: IVariant[];
-  images: IProductImage[];
+  images: string[];
   descriptions?: string;
   note?: string;
   price?: number;
-}
-
-export interface IProductImage {
-  link: string;
 }
 
 export interface IOption {
