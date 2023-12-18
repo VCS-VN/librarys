@@ -36,6 +36,7 @@ export interface IVariant {
   type?: string;
   name?: string;
   options?: IOption[];
+  minLength?: number;
 }
 
 export interface IProduct {
