@@ -21,4 +21,5 @@ export interface ICategory {
   sortIndex?: number;
   products?: IProduct[];
   store?: IStore;
+  images?: string[];
 }

@@ -50,4 +50,5 @@ export interface IProduct {
   descriptions?: string;
   statusId?: STATUS;
   onlinePrice?: number;
+  images?: string[];
 }
