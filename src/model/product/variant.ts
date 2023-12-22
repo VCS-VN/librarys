@@ -6,6 +6,7 @@ export interface IVariant {
   name?: string;
   options?: IOption[];
   minLength?: number;
+  storeId?: string;
 }
 
 export interface IOption {
