@@ -14,11 +14,11 @@ export function convertToSlug(string: string) {
 }
 
 export function capitalizeWords(str: string) {
-  let words = str?.split(' ');
-  let capitalizedWords = words?.map(function (word) {
+  const words = str?.split(' ');
+  const capitalizedWords = words?.map(function (word) {
     return word?.charAt(0).toUpperCase() + word?.slice(1);
   });
-  let capitalizedString = capitalizedWords?.join(' ');
+  const capitalizedString = capitalizedWords?.join(' ');
   return capitalizedString;
 }
 
