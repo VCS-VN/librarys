@@ -15,7 +15,7 @@ export interface IGetProductsModel {
 export interface ICreateProduct {
   name?: string;
   categoryId?: string;
-  variants?: IVariant[];
+  variantIds?: string[];
   images: string[];
   descriptions?: string;
   note?: string;
