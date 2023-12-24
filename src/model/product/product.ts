@@ -20,6 +20,7 @@ export interface ICreateProduct {
   descriptions?: string;
   note?: string;
   price?: number;
+  storeId?: string;
 }
 
 export interface IProduct {
