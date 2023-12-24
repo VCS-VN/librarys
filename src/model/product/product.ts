@@ -23,6 +23,10 @@ export interface ICreateProduct {
   storeId?: string;
 }
 
+export interface IUpdateProduct extends ICreateProduct {
+  id?: string;
+}
+
 export interface IProduct {
   id?: string;
   name?: string;
