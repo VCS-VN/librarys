@@ -1,4 +1,5 @@
 import { VariantType } from '@/enum';
+import { IProduct } from './product';
 
 export interface IVariant {
   id?: string;
@@ -7,6 +8,7 @@ export interface IVariant {
   options?: IOption[];
   minLength?: number;
   storeId?: string;
+  products?: IProduct[];
 }
 
 export interface IOption {
