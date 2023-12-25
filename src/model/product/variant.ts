@@ -1,4 +1,4 @@
-import { VariantType } from '@/enum';
+import { STATUS, VariantType } from '@/enum';
 import { IProduct } from './product';
 
 export interface IVariant {
@@ -17,4 +17,5 @@ export interface IOption {
   price?: number;
   metadata?: any;
   quantity?: number;
+  statusId?: STATUS;
 }
