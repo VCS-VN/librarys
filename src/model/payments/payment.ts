@@ -22,6 +22,7 @@ export interface IPayment {
   clientSecret?: string;
   addPaymentFees?: boolean;
   approvedAt?: Date;
+  storeId?: string;
 }
 
 export interface ICreatePayment {
@@ -41,4 +42,5 @@ export interface ICreatePayment {
   fees?: number;
   net?: number;
   applicationFees?: number;
+  storeId?: string;
 }
