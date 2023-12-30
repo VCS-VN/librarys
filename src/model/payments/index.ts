@@ -5,3 +5,5 @@ export * from './stripe';
 export * from './payment';
 
 export * from './refund';
+
+export * from './stripe.wh';
