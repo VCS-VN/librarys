@@ -17,3 +17,5 @@ export * from './log';
 export * from './delivery';
 
 export * from './assets';
+
+export * from './setting';
