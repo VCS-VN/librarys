@@ -21,3 +21,5 @@ export const DELIVERY_PORT = process.env.DELIVERY_PORT || 9000;
 export const LOG_PORT = process.env.LOG_PORT || 9000;
 
 export const ASSET_PORT = process.env.ASSET_PORT || 9000;
+
+export const SETTING_PORT = process.env.SETTING_PORT || 9000;
