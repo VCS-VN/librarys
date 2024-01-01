@@ -1,4 +1,4 @@
-import { STATUS } from '@/enum';
+import { BUSINESS_TYPE, STATUS } from '@/enum';
 import { StripeSubscription } from '../stripe';
 import { PAYMENT_TYPE } from '@/enum';
 import { IDoorDashStore } from '../delivery';
@@ -44,7 +44,7 @@ export interface IStore {
   orderTypes?: { name: string; code: string }[];
   priceId?: string;
   readerId?: string;
-  businessType?: string;
+  businessType?: BUSINESS_TYPE;
   phoneNumber?: string;
   servicePercent?: number;
 }
