@@ -31,3 +31,5 @@ export * from './booking';
 export * from './auth';
 
 export * from './assets';
+
+export * from './setting';
