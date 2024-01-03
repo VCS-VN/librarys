@@ -36,12 +36,15 @@ export interface IInsertOrderHistory {
 }
 
 export interface IGetOrder {
+  storeSlug?: string;
   storeId?: string;
   statusId?: number;
   fromDate?: Date;
   toDate?: Date;
   paymentType?: string;
   phoneNumber?: string;
+  status?: STATUS;
+  transactionId?: string;
 }
 
 export interface IGetOrders extends IGetOrder {
