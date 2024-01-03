@@ -44,3 +44,11 @@ export interface ICreatePayment {
   applicationFees?: number;
   storeId?: string;
 }
+
+export interface IGetPayments {
+  paymentType?: PAYMENT_TYPE;
+  storeId?: string;
+  fromDate?: Date;
+  toDate?: Date;
+  status?: STATUS;
+}
