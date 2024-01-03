@@ -51,4 +51,5 @@ export interface IGetPayments {
   fromDate?: Date;
   toDate?: Date;
   status?: STATUS;
+  storeSlug?: string;
 }
