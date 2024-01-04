@@ -27,6 +27,7 @@ export interface IOrder {
   refundStatus?: STATUS;
   storeSlug?: string;
   delivery?: IDeliveryInfo;
+  cancelable?: boolean;
 }
 
 export interface IInsertOrderHistory {
