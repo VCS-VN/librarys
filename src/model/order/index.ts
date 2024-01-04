@@ -32,7 +32,7 @@ export interface IOrder {
 
 export interface IInsertOrderHistory {
   orderCode?: string;
-  statusId: STATUS;
+  status: STATUS;
   changedAt?: Date;
 }
 
