@@ -16,4 +16,5 @@ export interface IBusinessData {
     displayName?: string;
   };
   name?: string;
+  maxStores?: number;
 }
