@@ -4,7 +4,7 @@ export interface IBooking {
   id?: string;
   orderId?: string;
   amount?: number;
-  paymentFees: number;
+  paymentFees?: number;
   paymentType?: PAYMENT_TYPE;
   userId?: string;
   storeId?: string;

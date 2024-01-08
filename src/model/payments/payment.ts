@@ -39,7 +39,12 @@ export interface ICreatePayment {
   paymentType?: PAYMENT_TYPE;
   paymentId?: string;
   addedMoney?: boolean;
-  fees?: number;
+  fees?: {
+    merchantFees: number;
+    serviceFees: number;
+    paymentFees: number;
+    deliveryFees: number;
+  };
   net?: number;
   applicationFees?: number;
   storeId?: string;
