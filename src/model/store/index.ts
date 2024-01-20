@@ -12,8 +12,8 @@ export interface IStorePayment {
 
 export interface IStorePaymentMetadata {
   payments?: IStorePayment[];
-  delivery?: {
-    doorDash?: IDoorDashStore;
+  tyro?: {
+    percent: number;
   };
 }
 
