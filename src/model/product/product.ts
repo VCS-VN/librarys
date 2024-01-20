@@ -7,6 +7,7 @@ export interface IGetProductsModel {
   keyword?: string;
   limit?: number;
   page?: number;
+  storeSlug?: string;
   storeId?: string;
   ids?: string[];
   statusId?: STATUS;
