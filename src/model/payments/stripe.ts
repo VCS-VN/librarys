@@ -9,3 +9,4 @@ export interface ICreateStripePayment {
   accountId: string;
   paymentType?: PAYMENT_TYPE;
 }
+
