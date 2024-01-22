@@ -1,3 +1,5 @@
+import { PAYMENT_TYPE } from '@/enum';
+
 export interface ICreateStripePayment {
   amount: number;
   fees: number;
@@ -5,4 +7,5 @@ export interface ICreateStripePayment {
   description?: string;
   descriptor?: string;
   accountId: string;
+  paymentType?: PAYMENT_TYPE;
 }
