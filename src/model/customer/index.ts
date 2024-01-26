@@ -1,6 +1,15 @@
+import { STATUS } from '@/enum';
+import { IStore } from '../store';
+
 export interface ICustomer {
   id?: string;
   phoneNumber?: string;
+  statusId?: STATUS;
+  avatar?: string;
+  stores?: IStore[];
+  email?: string;
+  name?: string;
+  code?: string;
 }
 
 export interface IGetCustomerByPhoneNumber {
