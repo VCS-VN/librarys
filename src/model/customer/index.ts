@@ -10,6 +10,7 @@ export interface ICustomer {
   email?: string;
   name?: string;
   code?: string;
+  stripeCustomerId?: string;
 }
 
 export interface IGetCustomerByPhoneNumber {
