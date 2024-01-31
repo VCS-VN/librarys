@@ -44,6 +44,7 @@ export interface ICreatePayment {
     serviceFees: number;
     paymentFees: number;
     deliveryFees: number;
+    pickupFees?: number;
   };
   net?: number;
   applicationFees?: number;
