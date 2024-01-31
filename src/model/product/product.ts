@@ -43,4 +43,5 @@ export interface IProduct {
   statusId?: STATUS;
   onlinePrice?: number;
   images?: string[];
+  pickupFees?: number;
 }
