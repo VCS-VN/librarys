@@ -8,5 +8,5 @@ export interface ICreateStripePayment {
   descriptor?: string;
   accountId: string;
   paymentType?: PAYMENT_TYPE;
+  customerId?: string;
 }
-
