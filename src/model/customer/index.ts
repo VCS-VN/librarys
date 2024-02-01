@@ -17,3 +17,13 @@ export interface IGetCustomerByPhoneNumber {
   customer: ICustomer;
   createIfNotExists?: boolean;
 }
+
+export interface ICustomerAddress {
+  id?: string;
+  name?: string;
+  placeId?: string;
+  lat?: number;
+  long?: number;
+  address?: string;
+  customerId?: string;
+}
