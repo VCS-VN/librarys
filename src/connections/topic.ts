@@ -27,3 +27,5 @@ export const ASSETS_TOPIC = 'amp.service.assets.topic';
 export const SETTING_TOPIC = 'amp.service.setting.topic';
 
 export const CUSTOMER_TOPIC = 'amp.service.customer.topic';
+
+export const CRON_TOPIC = 'amp.service.cron.topic';
