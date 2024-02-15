@@ -29,6 +29,10 @@ export interface IWithdrawInfo {
   routingType?: string;
   routingCode?: string;
   countryCode?: string;
+  state?: string;
+  city?: string;
+  address?: string;
+  postCode?: string;
   entityId?: string;
   entityType?: string;
   statusId?: STATUS;
