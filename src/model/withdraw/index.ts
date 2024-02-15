@@ -20,14 +20,14 @@ export interface IWithdraw {
 }
 
 export interface IWithdrawInfo {
-  id: string;
-  currency: string;
-  accountName: string;
+  id?: string;
+  currency?: string;
+  accountName?: string;
   accountNumber?: string;
   accountRoutingType?: string;
-  accountRoutingValue: string;
-  bankCountryCode: string;
-  entityId: string;
-  entityType: string;
-  statusId: STATUS;
+  accountRoutingValue?: string;
+  bankCountryCode?: string;
+  entityId?: string;
+  entityType?: string;
+  statusId?: STATUS;
 }
