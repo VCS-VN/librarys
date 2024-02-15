@@ -1,0 +1,8 @@
+export enum WITHDRAW_RESOURCE {
+  CUSTOMER = 'CUSTOMER',
+  USER = 'USER',
+}
+
+export enum WITHDRAW_PROVIDER {
+  AIR_WALLEX = 'AIR_WALLEX',
+}

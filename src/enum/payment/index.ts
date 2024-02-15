@@ -20,10 +20,6 @@ export enum PAYMENT_RESOURCE {
   STORE_BOOKING = 'STORE_BOOKING',
 }
 
-export enum WITHDRAW_TYPE {
-  AIR_WALLEX = 'AIR_WALLEX',
-}
-
 export enum PAYOUT_RESOURCE {
   STORE = 'store',
 }

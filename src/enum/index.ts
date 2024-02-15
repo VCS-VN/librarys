@@ -19,3 +19,5 @@ export * from './delivery';
 export * from './assets';
 
 export * from './setting';
+
+export * from './withdraw';
