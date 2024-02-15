@@ -24,9 +24,9 @@ export interface IWithdrawInfo {
   currency?: string;
   accountName?: string;
   accountNumber?: string;
-  accountRoutingType?: string;
-  accountRoutingValue?: string;
-  bankCountryCode?: string;
+  routingType?: string;
+  routingCode?: string;
+  countryCode?: string;
   entityId?: string;
   entityType?: string;
   statusId?: STATUS;
