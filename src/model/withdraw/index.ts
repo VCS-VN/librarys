@@ -21,6 +21,8 @@ export interface IWithdraw {
 
 export interface IWithdrawInfo {
   id?: string;
+  name?: string;
+  bankName?: string;
   currency?: string;
   accountName?: string;
   accountNumber?: string;
