@@ -9,14 +9,15 @@ export interface ICreateWithdraw {
 }
 
 export interface IWithdraw {
-  id: string;
-  amount: number;
-  resource: WITHDRAW_RESOURCE;
-  provider: WITHDRAW_PROVIDER;
+  id?: string;
+  amount?: number;
+  resource?: WITHDRAW_RESOURCE;
+  provider?: WITHDRAW_PROVIDER;
   description?: string;
-  withdrawInfoId: string;
-  statusId: STATUS;
+  withdrawInfoId?: string;
+  statusId?: STATUS;
   cancelReason?: string;
+  withdrawId?: string;
 }
 
 export interface IWithdrawInfo {
