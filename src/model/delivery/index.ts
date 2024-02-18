@@ -15,6 +15,7 @@ export interface IDeliveryContact {
   address?: string;
   name?: string;
   phoneNumber?: string;
+  email?: string;
 }
 
 export interface IDelivery {
