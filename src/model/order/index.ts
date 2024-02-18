@@ -67,6 +67,7 @@ export interface IDeliveryInfo {
   provider?: string;
   name?: string;
   tip?: number;
+  email?: string;
 }
 
 export interface ITransaction {
