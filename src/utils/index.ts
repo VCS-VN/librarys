@@ -1,4 +1,4 @@
-// export * from './dayjs';
+export * from './dayjs';
 
 export * from './string';
 
