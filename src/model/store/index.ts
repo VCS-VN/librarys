@@ -1,6 +1,5 @@
-import { BUSINESS_TYPE, STATUS } from '@/enum';
+import { BUSINESS_TYPE, STATUS, PAYMENT_TYPE, WEEK_DAY } from '@/enum';
 import { StripeSubscription } from '../stripe';
-import { PAYMENT_TYPE } from '@/enum';
 import { IDoorDashStore } from '../delivery';
 
 export interface IStorePayment {
@@ -21,6 +20,15 @@ export interface IStoreDeliveryMetadata {
   deliveries?: {
     doorDash?: IDoorDashStore;
   };
+}
+
+export interface IBusinessHour {
+  id?: string;
+  weekDate?: WEEK_DAY;
+  openHour?: string;
+  closeHour?: string;
+  storeId?: string;
+  statusId?: STATUS;
 }
 
 export interface IStore {
@@ -47,6 +55,7 @@ export interface IStore {
   businessType?: BUSINESS_TYPE;
   phoneNumber?: string;
   servicePercent?: number;
+  businessHours?: IBusinessHour[];
 }
 
 export interface IUpdateStore extends IStore {}

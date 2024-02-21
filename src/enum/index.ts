@@ -21,3 +21,5 @@ export * from './assets';
 export * from './setting';
 
 export * from './withdraw';
+
+export * from './times';
