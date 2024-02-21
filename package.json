@@ -1,6 +1,6 @@
 {
   "name": "@VCS-VN/librarys",
-  "version": "0.0.94",
+  "version": "0.0.95",
   "description": "To install dependencies:",
   "main": "dist/index.js",
   "publishConfig": {
