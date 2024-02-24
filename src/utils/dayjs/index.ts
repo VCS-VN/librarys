@@ -1,10 +1,10 @@
-import * as instance from 'dayjs';
-import * as isLeapYear from 'dayjs/plugin/isLeapYear';
-import * as localeData from 'dayjs/plugin/localeData';
-import * as utc from 'dayjs/plugin/utc';
-import * as timezone from 'dayjs/plugin/timezone';
-import * as weekday from 'dayjs/plugin/weekday';
-import * as isoWeek from 'dayjs/plugin/isoWeek';
+import instance = require('dayjs');
+import isLeapYear = require('dayjs/plugin/isLeapYear');
+import localeData = require('dayjs/plugin/localeData');
+import utc = require('dayjs/plugin/utc');
+import timezone = require('dayjs/plugin/timezone');
+import weekday = require('dayjs/plugin/weekday');
+import isoWeek = require('dayjs/plugin/isoWeek');
 
 instance.extend(localeData);
 instance.extend(isLeapYear);
