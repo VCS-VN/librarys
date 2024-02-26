@@ -39,4 +39,5 @@ export interface IDelivery {
   driverPhoneNumber?: string;
   driverId?: string;
   recreateCount?: number;
+  placeId?: string;
 }
