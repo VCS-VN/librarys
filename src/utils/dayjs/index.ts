@@ -15,4 +15,4 @@ instance.extend(isoWeek);
 
 instance.tz.setDefault('Etc/UCT');
 
-export const dayjs = instance;
+export const dayjs = instance.tz;

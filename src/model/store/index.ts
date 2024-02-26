@@ -56,6 +56,7 @@ export interface IStore {
   phoneNumber?: string;
   servicePercent?: number;
   businessHours?: IBusinessHour[];
+  timezone?: string;
 }
 
 export interface IUpdateStore extends IStore {}
