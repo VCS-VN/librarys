@@ -89,5 +89,6 @@ export interface ITransaction {
   updatedAt?: Date;
   paymentId?: string;
   store?: IStore;
+  storeId?: string;
   resource?: PAYMENT_RESOURCE;
 }
