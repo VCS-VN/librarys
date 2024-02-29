@@ -1,6 +1,6 @@
 import { ENTITY_TYPE, PAYMENT_PROVIDER, STATUS } from '@/enum';
 
-export interface HoldingBalance {
+export interface IHoldingBalance {
   id?: string;
   amount?: number;
   entityId?: string;
