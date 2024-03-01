@@ -37,4 +37,5 @@ export interface IWithdrawInfo {
   entityId?: string;
   entityType?: string;
   statusId?: STATUS;
+  isDefault?: boolean;
 }
