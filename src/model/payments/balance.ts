@@ -9,4 +9,5 @@ export interface IHoldingBalance {
   paymentId?: string;
   transactionId?: string;
   statusId?: STATUS;
+  withdrawId?: string;
 }
