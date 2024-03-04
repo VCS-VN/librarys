@@ -43,4 +43,5 @@ export interface IDelivery {
   driverId?: string;
   recreateCount?: number;
   placeId?: string;
+  requestId?: string;
 }
