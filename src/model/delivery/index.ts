@@ -17,6 +17,9 @@ export interface IDeliveryContact {
   phoneNumber?: string;
   email?: string;
   placeId?: string;
+  to?: string;
+  provider?: string;
+  tip?: number;
 }
 
 export interface IDelivery {
