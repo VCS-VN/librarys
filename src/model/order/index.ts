@@ -1,5 +1,5 @@
 import { ORDER_TYPE, PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
-import { ICustomer, IProduct, IStore } from '@/model';
+import { ICustomer, IDeliveryInfo, IProduct, IStore } from '@/model';
 
 export interface IOrder {
   _id?: string;
@@ -58,17 +58,6 @@ export interface IUpdateOrder {
   statusId?: number;
   paymentType?: string;
   note?: string;
-}
-
-export interface IDeliveryInfo {
-  to?: string;
-  phoneNumber?: string;
-  address?: string;
-  provider?: string;
-  name?: string;
-  tip?: number;
-  email?: string;
-  placeId?: string;
 }
 
 export interface ITransaction {

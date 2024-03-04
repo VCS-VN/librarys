@@ -9,22 +9,22 @@ export interface ICreateBusiness {
   activationStatus?: string;
 }
 
-export interface IDeliveryContact {
-  lat?: number;
-  lng?: number;
-  address?: string;
-  name?: string;
+export interface IDeliveryInfo {
+  to?: string;
   phoneNumber?: string;
+  address?: string;
+  provider?: string;
+  name?: string;
+  tip?: number;
   email?: string;
   placeId?: string;
-  to?: string;
-  provider?: string;
-  tip?: number;
+  lat?: number;
+  lng?: number;
 }
 
 export interface IDelivery {
-  from?: IDeliveryContact;
-  to?: IDeliveryContact;
+  from?: IDeliveryInfo;
+  to?: IDeliveryInfo;
   orderCode?: string;
   fees?: number;
   type?: string;
