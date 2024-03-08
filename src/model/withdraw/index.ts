@@ -18,6 +18,7 @@ export interface IWithdraw {
   statusId?: STATUS;
   cancelReason?: string;
   requestId?: string;
+  histories?: IWithdrawHistory[];
 }
 
 export interface IWithdrawInfo {
