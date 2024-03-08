@@ -39,3 +39,10 @@ export interface IWithdrawInfo {
   statusId?: STATUS;
   isDefault?: boolean;
 }
+
+export interface IWithdrawHistory {
+  withdrawCode?: string;
+  status?: STATUS;
+  changedAt?: Date;
+  createdAt?: Date;
+}
