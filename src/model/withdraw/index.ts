@@ -10,6 +10,7 @@ export interface ICreateWithdraw {
 
 export interface IWithdraw {
   id?: string;
+  code?: string;
   amount?: number;
   resource?: WITHDRAW_RESOURCE;
   provider?: WITHDRAW_PROVIDER;
