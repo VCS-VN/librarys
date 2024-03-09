@@ -45,6 +45,6 @@ export interface IWithdrawInfo {
 export interface IWithdrawHistory {
   withdrawCode?: string;
   status?: STATUS;
-  changedAt?: Date;
+  changedAt?: string;
   createdAt?: Date;
 }
