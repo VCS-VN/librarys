@@ -12,3 +12,7 @@ export interface IPusher {
   event?: string;
   message?: any;
 }
+
+export interface IMessage {
+  message?: any;
+}
