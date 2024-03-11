@@ -45,3 +45,11 @@ export interface IDelivery {
   placeId?: string;
   requestId?: string;
 }
+
+export interface IDeliveryHistory {
+  deliveryCode?: string;
+  status?: STATUS;
+  changedAt?: Date;
+  createdAt?: Date;
+  metadata?: any;
+}
