@@ -13,6 +13,6 @@ export interface IPusher {
   message?: any;
 }
 
-export interface IMessage {
+export interface IBotMessage {
   message?: any;
 }
