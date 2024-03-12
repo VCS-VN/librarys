@@ -56,7 +56,7 @@ export class EPISSettingService {
 
   async getValue(
     configString: string,
-    defaultValue: string | number,
+    defaultValue?: string | number,
   ): Promise<any> {
     const cachedData: ISetting[] = await this.cacheManager.get(
       SETTING_KEY.EPIS_SETTING,
