@@ -7,3 +7,5 @@ export * from './enum';
 export * from './core';
 
 export * from './utils';
+
+export * from './services';

@@ -1,6 +1,6 @@
 {
   "name": "@VCS-VN/librarys",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "description": "To install dependencies:",
   "main": "dist/index.js",
   "publishConfig": {
@@ -20,6 +20,7 @@
     "@nestjs/typeorm": "^10.0.0",
     "@types/bcryptjs": "^2.4.5",
     "bcryptjs": "^2.4.3",
+    "cache-manager": "^5.4.0",
     "cache-manager-ioredis-yet": "^1.2.2",
     "dayjs": "^1.11.10",
     "ioredis": "^5.3.2",

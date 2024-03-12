@@ -1,0 +1,3 @@
+export enum SETTING_KEY {
+  EPIS_SETTING = 'EPIS_SETTING',
+}
