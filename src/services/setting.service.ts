@@ -1,10 +1,12 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable, Logger } from '@nestjs/common';
 import { CACHE_MANAGER } from '@nestjs/cache-manager';
 import { Cache } from 'cache-manager';
 import { ISetting, SETTING_KEY } from '..';
 
 @Injectable()
 export class EPISSettingService {
+  private logger = new Logger(EPISSettingService.name);
+
   constructor(
     @Inject(CACHE_MANAGER)
     private readonly cacheManager: Cache,
@@ -41,10 +43,21 @@ export class EPISSettingService {
     return findSetting;
   }
 
-  async getConfigurationValue(
+  async getJSON<T>(configuration: string): Promise<T> {
+    try {
+      const value = await this.getValue(configuration, '');
+
+      return JSON.parse(value);
+    } catch (e) {
+      this.logger.error(e.message);
+      return null;
+    }
+  }
+
+  async getValue(
     configString: string,
     defaultValue: string | number,
-  ): Promise<string | number> {
+  ): Promise<any> {
     const cachedData: ISetting[] = await this.cacheManager.get(
       SETTING_KEY.EPIS_SETTING,
     );
