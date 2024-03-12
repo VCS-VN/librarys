@@ -4,7 +4,7 @@ import { Cache } from 'cache-manager';
 import { ISetting, SETTING_KEY } from '..';
 
 @Injectable()
-export class SettingService {
+export class EPISSettingService {
   constructor(
     @Inject(CACHE_MANAGER)
     private readonly cacheManager: Cache,
