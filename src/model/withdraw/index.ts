@@ -20,6 +20,7 @@ export interface IWithdraw {
   cancelReason?: string;
   requestId?: string;
   histories?: IWithdrawHistory[];
+  currency?: string;
 }
 
 export interface IWithdrawInfo {
