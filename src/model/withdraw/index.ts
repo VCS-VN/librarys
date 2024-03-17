@@ -41,6 +41,7 @@ export interface IWithdrawInfo {
   entityType?: string;
   statusId?: STATUS;
   isDefault?: boolean;
+  wiseId?: string;
 }
 
 export interface IWithdrawHistory {

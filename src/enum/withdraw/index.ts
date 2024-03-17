@@ -5,4 +5,5 @@ export enum WITHDRAW_RESOURCE {
 
 export enum WITHDRAW_PROVIDER {
   AIR_WALLEX = 'AIR_WALLEX',
+  WISE = 'WISE',
 }
