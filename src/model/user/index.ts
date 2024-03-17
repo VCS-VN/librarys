@@ -9,6 +9,7 @@ export interface IUser {
   username?: string;
   businessData?: IBusinessData;
   identityVerificationStatus?: STATUS;
+  countryId?: string;
 }
 
 export interface IBusinessData {
