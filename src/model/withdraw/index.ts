@@ -38,7 +38,7 @@ export interface IWithdrawInfo {
   address?: string;
   postCode?: string;
   entityId?: string;
-  entityType?: string;
+  entityType?: WITHDRAW_RESOURCE;
   statusId?: STATUS;
   isDefault?: boolean;
   wiseId?: string;
