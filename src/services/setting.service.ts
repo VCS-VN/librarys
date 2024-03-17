@@ -67,4 +67,26 @@ export class EPISSettingService {
 
     return appSetting?.value || defaultValue;
   }
+
+  async getThirdPartyValue(configString: string, defaultValue?: string) {
+    const cachedData: ISetting[] = await this.cacheManager.get(
+      SETTING_KEY.THIRD_PARTY_SETTING,
+    );
+
+    if (!cachedData) return defaultValue;
+    const appSetting = await this.getConfiguration(cachedData, configString);
+
+    return appSetting?.value || defaultValue;
+  }
+
+  async getThirdPartyJSON<T>(configuration: string): Promise<T> {
+    try {
+      const value = await this.getValue(configuration, '');
+
+      return JSON.parse(value);
+    } catch (e) {
+      this.logger.error(e.message);
+      return null;
+    }
+  }
 }
