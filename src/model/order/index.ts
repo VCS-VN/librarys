@@ -1,4 +1,10 @@
-import { ORDER_TYPE, PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
+import {
+  ORDER_TYPE,
+  PAYMENT_PROVIDER,
+  PAYMENT_RESOURCE,
+  PAYMENT_TYPE,
+  STATUS,
+} from '@/enum';
 import { ICustomer, IDeliveryInfo, IProduct, IStore } from '@/model';
 
 export interface IOrder {
@@ -28,6 +34,7 @@ export interface IOrder {
   storeSlug?: string;
   delivery?: IDeliveryInfo;
   cancelable?: boolean;
+  paymentProvider?: PAYMENT_PROVIDER;
 }
 
 export interface IInsertOrderHistory {
