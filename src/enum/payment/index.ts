@@ -11,6 +11,10 @@ export enum PAYMENT_TYPE {
   POS = 'POS',
   TYRO = 'TYRO',
   VA = 'VA',
+  WECHAT_PAY = 'WECHAT_PAY',
+  ALI_PAY = 'ALI_PAY',
+  WALLET = 'WALLET',
+  ZALO_PAY = 'ZALO_PAY',
 }
 
 export enum PAYMENT_RESOURCE {
