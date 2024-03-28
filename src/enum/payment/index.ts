@@ -10,6 +10,7 @@ export enum PAYMENT_TYPE {
   GOOGLE_PAY = 'GOOGLE_PAY',
   POS = 'POS',
   TYRO = 'TYRO',
+  VA = 'VA',
 }
 
 export enum PAYMENT_RESOURCE {
@@ -35,4 +36,5 @@ export enum PAYMENT_PROVIDER {
   AIR_WALLEX = 'AIR_WALLEX',
   STRIPE = 'STRIPE',
   TYRO = 'TYRO',
+  NINE_PAY = 'NINE_PAY',
 }

@@ -1,4 +1,4 @@
-import { PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
+import { ENTITY_TYPE, PAYMENT_RESOURCE, PAYMENT_TYPE, STATUS } from '@/enum';
 
 export interface IPayment {
   id?: string;
@@ -58,4 +58,12 @@ export interface IGetPayments {
   toDate?: Date;
   status?: STATUS;
   storeSlug?: string;
+}
+
+export interface INinePay {
+  entityId?: string;
+  entityType?: ENTITY_TYPE;
+  status?: STATUS;
+  data?: any;
+  createdAt?: Date;
 }
