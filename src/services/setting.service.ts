@@ -32,13 +32,24 @@ export class EPISSettingService {
       );
     }
 
-    const [page, type, key] = configuration?.split('.');
-    const findSetting = dataSource?.find(
-      (setting) =>
-        setting.service === page &&
+    const [service, type, key] = configuration?.split('.');
+    const findSetting = dataSource?.find((setting) => {
+      if (
+        key &&
+        setting.key === key &&
         setting.type === type &&
-        setting.key === key,
-    );
+        setting.service === service
+      ) {
+        return true;
+      }
+      if (type && setting.type === type && setting.service === service) {
+        return true;
+      }
+      if (service && setting.service === service) {
+        return true;
+      }
+      return false;
+    });
 
     return findSetting;
   }
@@ -57,9 +68,10 @@ export class EPISSettingService {
   async getValue(
     configString: string,
     defaultValue?: string | number,
+    dataSource?: SETTING_KEY,
   ): Promise<any> {
     const cachedData: ISetting[] = await this.cacheManager.get(
-      SETTING_KEY.EPIS_SETTING,
+      dataSource || SETTING_KEY.EPIS_SETTING,
     );
 
     if (!cachedData) return defaultValue;
