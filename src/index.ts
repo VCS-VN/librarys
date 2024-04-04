@@ -1,3 +1,4 @@
+import 'dotenv/config';
 export * from './connections';
 
 export * from './model';
