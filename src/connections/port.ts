@@ -1,4 +1,4 @@
-export const PAYMENT_PORT = process.env.PAYMENT_PORT || 9000;
+export const FINANCE_PORT = process.env.FINANCE_PORT || 9000;
 
 export const NOTIFICATION_PORT = process.env.NOTIFICATION_PORT || 9000;
 
