@@ -15,7 +15,7 @@ export class EPISSettingService {
   async getConfiguration(
     dataSource: ISetting[],
     configuration: string,
-  ): Promise<ISetting> {
+  ): Promise<ISetting[]> {
     if (!dataSource) {
       throw new Error(
         `No data source found. Please check you cache configuration. ${configuration}`,
@@ -32,15 +32,26 @@ export class EPISSettingService {
       );
     }
 
-    const [page, type, key] = configuration?.split('.');
-    const findSetting = dataSource?.find(
-      (setting) =>
-        setting.service === page &&
+    const [service, type, key] = configuration?.split('.');
+    const foundSettings = dataSource?.filter((setting) => {
+      if (
+        key &&
+        setting.service === service &&
         setting.type === type &&
-        setting.key === key,
-    );
+        setting.key === key
+      ) {
+        return true;
+      }
+      if (type && setting.service === service && setting.type === type) {
+        return true;
+      }
+      if (service && setting.service === service) {
+        true;
+      }
+      return false;
+    });
 
-    return findSetting;
+    return foundSettings;
   }
 
   async getJSON<T>(configuration: string): Promise<T> {
@@ -65,7 +76,7 @@ export class EPISSettingService {
     if (!cachedData) return defaultValue;
     const appSetting = await this.getConfiguration(cachedData, configString);
 
-    return appSetting?.value || defaultValue;
+    return appSetting[0]?.value || defaultValue;
   }
 
   async getThirdPartyValue(configString: string, defaultValue?: string) {
@@ -76,12 +87,38 @@ export class EPISSettingService {
     if (!cachedData) return defaultValue;
     const appSetting = await this.getConfiguration(cachedData, configString);
 
-    return appSetting?.value || defaultValue;
+    return appSetting[0]?.value || defaultValue;
+  }
+
+  async getValues(configString: string): Promise<ISetting[]> {
+    const cachedData: ISetting[] = await this.cacheManager.get(
+      SETTING_KEY.THIRD_PARTY_SETTING,
+    );
+    if (!cachedData) {
+      return [];
+    }
+
+    const appSetting = await this.getConfiguration(cachedData, configString);
+
+    return appSetting;
+  }
+
+  async getThirdPartyValues(configString: string): Promise<ISetting[]> {
+    const cachedData: ISetting[] = await this.cacheManager.get(
+      SETTING_KEY.THIRD_PARTY_SETTING,
+    );
+    if (!cachedData) {
+      return [];
+    }
+
+    const appSetting = await this.getConfiguration(cachedData, configString);
+
+    return appSetting;
   }
 
   async getThirdPartyJSON<T>(configuration: string): Promise<T> {
     try {
-      const value = await this.getValue(configuration, '');
+      const value = await this.getThirdPartyValue(configuration, '');
 
       return JSON.parse(value);
     } catch (e) {
