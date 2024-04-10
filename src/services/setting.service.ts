@@ -26,11 +26,6 @@ export class EPISSettingService {
         `No configuration found. Format: page.type.key ${configuration}`,
       );
     }
-    if (configuration?.split('.').length !== 3) {
-      throw new Error(
-        `Invalid configuration. Format: page.type.key ${configuration}`,
-      );
-    }
 
     const [service, type, key] = configuration?.split('.');
     const foundSettings = dataSource?.filter((setting) => {
