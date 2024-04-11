@@ -40,5 +40,5 @@ export enum PAYMENT_PROVIDER {
   AIR_WALLEX = 'AIR_WALLEX',
   STRIPE = 'STRIPE',
   TYRO = 'TYRO',
-  NINE_PAY = 'NINE_PAY',
+  PAY_ME = 'PAY_ME',
 }

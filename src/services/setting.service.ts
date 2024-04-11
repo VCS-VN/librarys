@@ -29,19 +29,24 @@ export class EPISSettingService {
 
     const [service, type, key] = configuration?.split('.');
     const foundSettings = dataSource?.filter((setting) => {
-      if (
-        key &&
-        setting.service === service &&
-        setting.type === type &&
-        setting.key === key
-      ) {
-        return true;
+      if (key) {
+        if (
+          setting.service === service &&
+          setting.type === type &&
+          setting.key === key
+        )
+          return true;
+
+        return false;
       }
-      if (type && setting.service === service && setting.type === type) {
-        return true;
+      if (type) {
+        if (setting.service === service && setting.type === type) return true;
+        return false;
       }
-      if (service && setting.service === service) {
-        true;
+      if (service) {
+        if (setting.service === service) true;
+
+        return false;
       }
       return false;
     });
