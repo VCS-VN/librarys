@@ -6,7 +6,7 @@ export * from './order';
 
 export * from './stripe';
 
-export * from './payments';
+export * from './finances';
 
 export * from './messages';
 
