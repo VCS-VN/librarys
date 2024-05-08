@@ -3,6 +3,9 @@ import { STATUS } from '@/enum';
 export interface IUser {
   id?: string;
   phoneNumber?: string;
+  email?: string;
+  firstName?: string;
+  lastName?: string;
   accountId?: string;
   password?: string;
   statusId?: STATUS;
@@ -10,6 +13,7 @@ export interface IUser {
   businessData?: IBusinessData;
   identityVerificationStatus?: STATUS;
   countryId?: number;
+  avatar?: string;
 }
 
 export interface IBusinessData {
