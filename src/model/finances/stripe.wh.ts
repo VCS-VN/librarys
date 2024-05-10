@@ -18,6 +18,7 @@ interface ObjectData {
   id: string;
   object: string;
   amount: number;
+  action?: Action;
   amount_capturable: number;
   amount_details: AmountDetails;
   amount_received: number;
@@ -71,28 +72,40 @@ interface Charges {
   total_count: number;
   url: string;
 }
-
 interface Metadata {}
-
 interface PaymentMethodOptions {
   card_present: CardPresent;
 }
-
 interface CardPresent {
   request_extended_authorization: boolean;
   request_incremental_authorization_support: boolean;
   routing: Routing;
 }
-
 interface Routing {
   requested_priority: any;
 }
-
 interface TransferData {
   destination: string;
 }
-
 interface Request {
   id: string;
   idempotency_key: string;
+}
+
+export interface Action {
+  failure_code: string;
+  failure_message: string;
+  process_payment_intent: ProcessPaymentIntent;
+  status: string;
+  type: string;
+}
+
+export interface ProcessPaymentIntent {
+  payment_intent: string;
+  process_config: ProcessConfig;
+}
+
+export interface ProcessConfig {
+  enable_customer_cancellation: boolean;
+  skip_tipping: boolean;
 }
