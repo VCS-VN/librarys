@@ -1,4 +1,4 @@
-import { ENTITY_TYPE, PAYMENT_PROVIDER, STATUS } from '@/enum';
+import { ENTITY_TYPE, PAYMENT_PROVIDER, PAYMENT_TYPE, STATUS } from '@/enum';
 
 export interface IHoldingBalance {
   id?: string;
@@ -12,4 +12,5 @@ export interface IHoldingBalance {
   statusId?: STATUS;
   withdrawId?: string;
   expectedProcessingDate?: Date;
+  paymentType?: PAYMENT_TYPE;
 }
