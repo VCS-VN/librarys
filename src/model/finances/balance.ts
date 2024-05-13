@@ -11,5 +11,5 @@ export interface IHoldingBalance {
   transactionId?: string;
   statusId?: STATUS;
   withdrawId?: string;
-  processingAt?: Date;
+  expectedProcessingDate?: Date;
 }
