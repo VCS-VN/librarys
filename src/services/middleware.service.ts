@@ -5,7 +5,7 @@ import { NextFunction } from 'express';
 export class LoggerMiddleware implements NestMiddleware {
   private readonly logger = new Logger();
   use(req: Request, res: Response, next: NextFunction) {
-    this.logger.log(`Request...${req.url}`);
+    this.logger.verbose(`${req.url}`);
 
     next();
   }
