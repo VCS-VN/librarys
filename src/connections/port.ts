@@ -25,3 +25,5 @@ export const ASSET_PORT = process.env.ASSET_PORT || 9000;
 export const SETTING_PORT = process.env.SETTING_PORT || 9000;
 
 export const STORE_PORT = process.env.STORE_PORT || 9000;
+
+export const ESIM_PORT = process.env.ESIM_PORT || 9000;
