@@ -43,13 +43,13 @@ export interface IInsertOrderHistory {
   changedAt?: Date;
 }
 
-export interface IGetOrder {
+export interface IGetOrder extends IOrder {
   storeSlug?: string;
   storeId?: string;
   statusId?: number;
   fromDate?: Date;
   toDate?: Date;
-  paymentType?: string;
+  paymentType?: PAYMENT_TYPE;
   phoneNumber?: string;
   status?: STATUS;
   transactionId?: string;
