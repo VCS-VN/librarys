@@ -37,4 +37,5 @@ export enum STATUS {
   REFUNDING = 34,
   REFUNDED = 35,
   BOOKED = 36,
+  IS_COMING = 37,
 }

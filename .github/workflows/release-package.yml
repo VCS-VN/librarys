@@ -5,6 +5,30 @@ on:
     branches:
       - master
 jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout to repository
+        uses: actions/checkout@v4
+      - name: install and build
+        run: npm ci --save-dev typescript
+      - name: publish to registry
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@VCS-VN'
+
+      - name: Bump version and create a new tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_PASSWORD }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          npm version patch -m "ci: bump version to %s"
+          git push origin HEAD --follow-tags
+
   build-and-deploy:
     name: Build and deploy new version
     runs-on: 

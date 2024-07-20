@@ -22,6 +22,25 @@ export interface IDeliveryInfo {
   lng?: number;
 }
 
+export interface IDeliveryDriver {
+  id?: string;
+  name?: string;
+  phoneNumber?: string;
+  rating?: string;
+  image?: string;
+  location?: {
+    lat?: number;
+    lng?: number;
+  };
+  email?: string;
+  vehicle?: {
+    color?: string;
+    brand?: string;
+    model?: string;
+    type?: string;
+  };
+}
+
 export interface IDelivery {
   from?: IDeliveryInfo;
   to?: IDeliveryInfo;
@@ -44,6 +63,7 @@ export interface IDelivery {
   recreateCount?: number;
   placeId?: string;
   requestId?: string;
+  deliveryInfo?: IDeliveryDriver;
 }
 
 export interface IDeliveryHistory {
