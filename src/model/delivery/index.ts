@@ -22,7 +22,7 @@ export interface IDeliveryInfo {
   lng?: number;
 }
 
-export interface IDeliveryDriver {
+export interface IDriverInfo {
   id?: string;
   name?: string;
   phoneNumber?: string;
@@ -63,7 +63,7 @@ export interface IDelivery {
   recreateCount?: number;
   placeId?: string;
   requestId?: string;
-  deliveryInfo?: IDeliveryDriver;
+  driverInfo?: IDriverInfo;
 }
 
 export interface IDeliveryHistory {
