@@ -6,6 +6,7 @@ on:
       - master
 jobs:
   bump-version:
+    name: Bump version
     runs-on: ubuntu-latest
 
     steps:
@@ -30,6 +31,7 @@ jobs:
           git push origin HEAD --follow-tags
 
   build-and-deploy:
+    needs: [bump-version]
     name: Build and deploy new version
     runs-on: 
       - ubuntu-latest
