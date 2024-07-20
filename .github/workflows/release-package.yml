@@ -61,6 +61,8 @@ jobs:
     steps:
       - name: checkout to repository
         uses: actions/checkout@v4
+      - name: pull new version
+        uses: git pull origin master
       - name: install and build
         run: npm ci --save-dev typescript
       - name: publish to registry
