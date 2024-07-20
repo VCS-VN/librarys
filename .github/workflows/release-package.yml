@@ -25,7 +25,7 @@ jobs:
 
   bump-version:
     name: Bump version
-    needs: [change]
+    needs: [changes]
     if: ${{ needs.changes.outputs.src == 'true' }}
     runs-on: ubuntu-latest
 
