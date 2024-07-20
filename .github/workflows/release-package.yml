@@ -10,10 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout to repository
-        uses: actions/checkout@v4
-      - name: install and build
-        run: npm ci --save-dev typescript
+      - name: Checkout CICD Repository
+        uses: actions/checkout@v3
+        with:
+          repository: "VCS-VN/librarys.git"
+          token: ${{ secrets.GIT_PASSWORD }} 
+          ref: master
+
       - name: publish to registry
         uses: actions/setup-node@v3
         with:
@@ -25,8 +28,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_PASSWORD }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "vcs.epis@gmail.com"
+          git config --global user.name "github-build"
           npm version patch -m "ci: bump version to %s"
           git push origin HEAD --follow-tags
 
