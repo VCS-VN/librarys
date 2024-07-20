@@ -5,6 +5,53 @@ on:
     branches:
       - master
 jobs:
+  changes:
+    name: Check files changes
+    runs-on: 
+      - ubuntu-latest
+    outputs:
+      src: ${{ steps.filter.outputs.src }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: tj-actions/branch-names@v6
+        id: branch-name
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: ${{ steps.branch-name.outputs.current_branch }}
+          filters: |
+            src:
+              - 'src/**'
+
+  bump-version:
+    name: Bump version
+    needs: [change]
+    if: ${{ needs.changes.outputs.src == 'true' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout CICD Repository
+        uses: actions/checkout@v3
+        with:
+          repository: "VCS-VN/librarys.git"
+          token: ${{ secrets.GIT_PASSWORD }} 
+          ref: master
+
+      - name: publish to registry
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@VCS-VN'
+
+      - name: Bump version and create a new tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_PASSWORD }}
+        run: |
+          git config --global user.email "vcs.epis@gmail.com"
+          git config --global user.name "github-build"
+          npm version patch -m "ci: bump version to %s"
+          git push origin HEAD --follow-tags
 
   build-and-deploy:
     needs: [bump-version]
