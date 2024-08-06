@@ -87,4 +87,5 @@ export interface ITransaction {
   store?: IStore;
   storeId?: string;
   resource?: PAYMENT_RESOURCE;
+  currency?: string;
 }
