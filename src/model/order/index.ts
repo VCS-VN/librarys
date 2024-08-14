@@ -6,6 +6,7 @@ import {
   STATUS,
 } from '@/enum';
 import { ICustomer, IDeliveryInfo, IProduct, IStore } from '@/model';
+import { IESim } from '../esim';
 
 export interface IOrder {
   _id?: string;
@@ -35,6 +36,7 @@ export interface IOrder {
   delivery?: IDeliveryInfo;
   cancelable?: boolean;
   paymentProvider?: PAYMENT_PROVIDER;
+  esim?: IESim;
 }
 
 export interface IInsertOrderHistory {
