@@ -37,6 +37,7 @@ export interface IOrder {
   cancelable?: boolean;
   paymentProvider?: PAYMENT_PROVIDER;
   esim?: IESim;
+  shipping?: any;
 }
 
 export interface IInsertOrderHistory {
