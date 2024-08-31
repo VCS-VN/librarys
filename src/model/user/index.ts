@@ -14,6 +14,7 @@ export interface IUser {
   identityVerificationStatus?: STATUS;
   countryId?: number;
   avatar?: string;
+  businessName?: string;
 }
 
 export interface IBusinessData {
