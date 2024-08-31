@@ -33,3 +33,5 @@ export const CRON_TOPIC = 'amp.service.cron.topic';
 export const FINANCE_TOPIC = 'amp.service.finance.topic';
 
 export const SHIPPING_TOPIC = 'amp.service.shipping.topic';
+
+export const FULFILLMENT_TOPIC = 'amp.service.fulfillment.topic';
