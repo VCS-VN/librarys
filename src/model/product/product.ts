@@ -11,6 +11,7 @@ export interface IGetProductsModel {
   storeId?: string;
   ids?: string[];
   statusId?: STATUS;
+  sku?: string;
 }
 
 export interface ICreateProduct {
