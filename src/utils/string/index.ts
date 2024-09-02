@@ -4,8 +4,6 @@ export function randomString(length = 10) {
 }
 
 export function convertToSlug(string: string) {
-  string = string.replace(/[^\w\s-]/g, '');
-
   string = string.replace(/\s+/g, '-');
 
   string = string.toLowerCase();
