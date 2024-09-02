@@ -44,4 +44,5 @@ export interface IProduct {
   onlinePrice?: number;
   images?: string[];
   pickupFees?: number;
+  sku?: string;
 }
