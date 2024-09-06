@@ -26,7 +26,6 @@ export interface ICreateProduct {
   storeId?: string;
   onlinePrice?: number;
   sku?: string;
-  skus?: string[];
 }
 
 export interface IUpdateProduct extends ICreateProduct {
