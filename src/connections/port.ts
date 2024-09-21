@@ -31,3 +31,5 @@ export const ESIM_PORT = process.env.ESIM_PORT || 9000;
 export const SHIPPING_PORT = process.env.SHIPPING_PORT || 9000;
 
 export const FULFILLMENT_PORT = process.env.FULFILLMENT_PORT || 9000;
+
+export const CONTACT_CENTER_PORT = process.env.CONTACT_CENTER_PORT || 9000;
