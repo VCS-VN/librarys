@@ -17,3 +17,4 @@ export * from './auth';
 export * from './assets';
 export * from './setting';
 export * from './withdraw';
+export * from './contact-center';
