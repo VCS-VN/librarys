@@ -1,4 +1,7 @@
-export interface ITwilioWebhook {
+import { TWILIO_CALL_DIRECTION } from '@/enum';
+import { IConversation } from '.';
+
+export interface ITwilioSMSWebhook {
   ToCountry: string;
   ToState: string;
   SmsMessageSid: string;
@@ -18,4 +21,10 @@ export interface ITwilioWebhook {
   AccountSid: string;
   From: string;
   ApiVersion: string;
+}
+
+export interface ITwilioCallWebhook {
+  direction: TWILIO_CALL_DIRECTION;
+  conversationId?: string;
+  conversation: IConversation;
 }

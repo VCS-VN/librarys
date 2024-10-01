@@ -23,3 +23,5 @@ export * from './setting';
 export * from './withdraw';
 
 export * from './times';
+
+export * from './contact-center';
