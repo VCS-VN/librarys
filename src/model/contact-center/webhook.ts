@@ -1,4 +1,4 @@
-import { TWILIO_CALL_DIRECTION } from '@/enum';
+import { CONTACT_MESSAGE_TYPE, TWILIO_CALL_DIRECTION } from '@/enum';
 import { IConversation } from '.';
 
 export interface ITwilioSMSWebhook {
@@ -34,4 +34,6 @@ export interface ITwilioCallWebhook {
   contactId?: string;
 }
 
-export interface ITwilioWebhook extends ITwilioCallWebhook, ITwilioSMSWebhook {}
+export interface ITwilioWebhook extends ITwilioCallWebhook, ITwilioSMSWebhook {
+  type?: CONTACT_MESSAGE_TYPE;
+}
