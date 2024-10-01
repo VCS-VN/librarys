@@ -24,7 +24,12 @@ export interface ITwilioSMSWebhook {
 }
 
 export interface ITwilioCallWebhook {
-  direction: TWILIO_CALL_DIRECTION;
+  direction?: TWILIO_CALL_DIRECTION;
   conversationId?: string;
-  conversation: IConversation;
+  conversation?: IConversation;
+  from?: string;
+  to?: string;
+  duration?: number;
+  callDuration?: number;
+  contactId?: string;
 }
