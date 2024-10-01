@@ -33,3 +33,5 @@ export interface ITwilioCallWebhook {
   callDuration?: number;
   contactId?: string;
 }
+
+export interface ITwilioWebhook extends ITwilioCallWebhook, ITwilioSMSWebhook {}
