@@ -1,4 +1,4 @@
-import { STATUS } from '@/enum';
+import { IDENTITY_LOGIN_TYPE, STATUS } from '@/enum';
 
 export interface IUser {
   id?: string;
@@ -15,6 +15,7 @@ export interface IUser {
   countryId?: number;
   avatar?: string;
   businessName?: string;
+  source?: IDENTITY_LOGIN_TYPE;
 }
 
 export interface IBusinessData {
