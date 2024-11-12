@@ -25,3 +25,5 @@ export * from './withdraw';
 export * from './times';
 
 export * from './contact-center';
+
+export * from './shipping';
