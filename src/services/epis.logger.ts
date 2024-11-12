@@ -15,12 +15,12 @@ export class EPISLogger extends ConsoleLogger {
     'InstanceLoader',
     'RoutesResolver',
     'RouterExplorer',
+    'RabbitMQModule',
   ];
 
   override log(message: any, context?: string): void {
-    console.log('🚀 ~ EPISLogger ~ overridelog ~ context:', context);
     if (!EPISLogger.contextsToIgnore.includes(context)) {
-      super.log.apply(this, message);
+      super.log(message, context);
     }
   }
 }
