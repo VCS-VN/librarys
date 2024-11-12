@@ -18,6 +18,7 @@ export class EPISLogger extends ConsoleLogger {
   ];
 
   override log(_: any, context?: string): void {
+    console.log('🚀 ~ EPISLogger ~ overridelog ~ context:', context);
     if (!EPISLogger.contextsToIgnore.includes(context)) {
       super.log.apply(this);
     }
