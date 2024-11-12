@@ -17,10 +17,10 @@ export class EPISLogger extends ConsoleLogger {
     'RouterExplorer',
   ];
 
-  override log(_: any, context?: string): void {
+  override log(message: any, context?: string): void {
     console.log('🚀 ~ EPISLogger ~ overridelog ~ context:', context);
     if (!EPISLogger.contextsToIgnore.includes(context)) {
-      super.log.apply(this);
+      super.log.apply(this, message);
     }
   }
 }
