@@ -10,4 +10,16 @@ export class EPISLogger extends ConsoleLogger {
   override formatPid(pid: number): string {
     return `[${this.#appName}] ${pid}  - `;
   }
+
+  static contextsToIgnore = [
+    'InstanceLoader',
+    'RoutesResolver',
+    'RouterExplorer',
+  ];
+
+  override log(_: any, context?: string): void {
+    if (!EPISLogger.contextsToIgnore.includes(context)) {
+      super.log.apply(this);
+    }
+  }
 }
