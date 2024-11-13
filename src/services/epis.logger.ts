@@ -20,8 +20,11 @@ export class EPISLogger extends ConsoleLogger {
 
   override log(message: any, context?: string): void {
     if (!EPISLogger.contextsToIgnore.includes(context)) {
-      if (typeof message === 'object') {
-        message = JSON.stringify(message, null, 0);
+      if (
+        typeof message === 'object' &&
+        process.env.NODE_ENV === 'production'
+      ) {
+        message = JSON.stringify(message);
       }
 
       super.log(message, context);
@@ -29,17 +32,17 @@ export class EPISLogger extends ConsoleLogger {
   }
 
   override error(message: any, trace?: string, context?: string): void {
-    if (typeof message === 'object') {
+    if (typeof message === 'object' && process.env.NODE_ENV === 'production') {
       // Minify JSON
-      message = JSON.stringify(message, null, 0);
+      message = JSON.stringify(message);
     }
     super.error(message, trace, context);
   }
 
   override warn(message: any, context?: string): void {
-    if (typeof message === 'object') {
+    if (typeof message === 'object' && process.env.NODE_ENV === 'production') {
       // Minify JSON
-      message = JSON.stringify(message, null, 0);
+      message = JSON.stringify(message);
     }
     super.warn(message, context);
   }
