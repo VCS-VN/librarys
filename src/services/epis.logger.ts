@@ -2,13 +2,19 @@ import { ConsoleLogger } from '@nestjs/common';
 
 export class EPISLogger extends ConsoleLogger {
   #appName = 'Company App';
+  private service: string;
+
+  constructor(service: string) {
+    super();
+    this.service = service;
+  }
 
   public setAppName(name: string): void {
     this.#appName = name;
   }
 
   override formatPid(pid: number): string {
-    return `[${this.#appName}] ${pid}  - `;
+    return `[${this.service}] [${this.#appName}] ${pid}  - `;
   }
 
   static contextsToIgnore = [
@@ -31,19 +37,29 @@ export class EPISLogger extends ConsoleLogger {
     }
   }
 
-  override error(message: any, trace?: string, context?: string): void {
-    if (typeof message === 'object' && process.env.NODE_ENV === 'production') {
-      // Minify JSON
-      message = JSON.stringify(message);
+  override error(message: any, context?: string): void {
+    if (!EPISLogger.contextsToIgnore.includes(context)) {
+      if (
+        typeof message === 'object' &&
+        process.env.NODE_ENV === 'production'
+      ) {
+        message = JSON.stringify(message);
+      }
+
+      super.error(message, context);
     }
-    super.error(message, trace, context);
   }
 
   override warn(message: any, context?: string): void {
-    if (typeof message === 'object' && process.env.NODE_ENV === 'production') {
-      // Minify JSON
-      message = JSON.stringify(message);
+    if (!EPISLogger.contextsToIgnore.includes(context)) {
+      if (
+        typeof message === 'object' &&
+        process.env.NODE_ENV === 'production'
+      ) {
+        message = JSON.stringify(message);
+      }
+
+      super.warn(message, context);
     }
-    super.warn(message, context);
   }
 }
