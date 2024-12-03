@@ -10,7 +10,7 @@ export class EPISLogger extends ConsoleLogger {
   override formatPid(pid: number): string {
     const service = process.env.APP_NAME;
 
-    return `[${service}] [${this.#appName}] ${pid}  - `;
+    return `[${service}] [${this.context || this.#appName}] ${pid}  - `;
   }
 
   static contextsToIgnore = [
