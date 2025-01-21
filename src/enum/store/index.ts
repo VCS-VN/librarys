@@ -1,0 +1,3 @@
+export enum STORE_INTEGRATION_PLATFORM {
+  SHOPIFY = 'SHOPIFY',
+}
