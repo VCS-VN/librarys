@@ -5,4 +5,5 @@ export enum ORDER_TYPE {
   PICK_UP = 'PICK_UP',
   ESIM = 'ESIM',
   SHIPPING = 'SHIPPING',
+  RETAIL = 'RETAIL',
 }
