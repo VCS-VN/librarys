@@ -7,3 +7,4 @@ export * from './core';
 export * from './utils';
 export * from './services';
 export * from './controllers';
+export * from './dto';

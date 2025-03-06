@@ -19,3 +19,14 @@ export interface IOption {
   quantity?: number;
   statusId?: STATUS;
 }
+
+export enum OptionValueType {
+  STRING = 'string',
+  NUMBER = 'number',
+}
+
+export enum OptionUnitType {
+  KG = 'kg',
+  LITRE = 'litre',
+  PIECE = 'piece',
+}
