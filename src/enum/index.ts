@@ -15,3 +15,4 @@ export * from './contact-center';
 export * from './shipping';
 export * from './store';
 export * from './fulfillment';
+export * from './stripe';
