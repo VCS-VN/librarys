@@ -1,4 +1,10 @@
-import { BUSINESS_TYPE, STATUS, PAYMENT_TYPE, WEEK_DAY } from '@/enum';
+import {
+  BUSINESS_TYPE,
+  STATUS,
+  PAYMENT_TYPE,
+  WEEK_DAY,
+  STRIPE_TYPE,
+} from '@/enum';
 import { StripeSubscription } from '../stripe';
 import { IDoorDashStore } from '../delivery';
 
@@ -58,6 +64,7 @@ export interface IStore {
   businessHours?: IBusinessHour[];
   timezone?: string;
   setting: Partial<IStoreSetting>;
+  stripeType?: STRIPE_TYPE;
 }
 
 export interface IStoreSetting {
