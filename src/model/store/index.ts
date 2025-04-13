@@ -57,6 +57,7 @@ export interface IStore {
   servicePercent?: number;
   businessHours?: IBusinessHour[];
   timezone?: string;
+  setting: Partial<IStoreSetting>;
 }
 
 export interface IStoreSetting {
