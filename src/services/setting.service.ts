@@ -43,6 +43,7 @@ export class EPISSettingService {
         if (setting.service === service && setting.type === type) return true;
         return false;
       }
+
       if (service) {
         if (setting.service === service) true;
 
