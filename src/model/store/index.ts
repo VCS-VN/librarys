@@ -59,6 +59,26 @@ export interface IStore {
   timezone?: string;
 }
 
+export interface IStoreSetting {
+  id: string;
+  store: Partial<IStore>;
+  isVerifiedProfile: boolean;
+  currency: string;
+  stripeAccountId: string;
+  verifiedRequirements: any;
+  paymentMethods: Partial<IVerifiedProfilePaymentMethod>[];
+}
+
+export interface IVerifiedProfilePaymentMethod {
+  type: PAYMENT_TYPE;
+  title: string;
+  source: string[];
+  fee: Partial<{
+    percent: number;
+    amount: number;
+  }>;
+}
+
 export interface IUpdateStore extends IStore {}
 
 export interface ICreateStore extends IStore {}

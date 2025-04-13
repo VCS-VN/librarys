@@ -17,6 +17,7 @@ export enum PAYMENT_TYPE {
   ZALO_PAY = 'ZALO_PAY',
   VIET_QR = 'VIET_QR',
   BALANCE = 'BALANCE',
+  TRANSFER = 'TRANSFER',
 }
 
 export enum PAYMENT_RESOURCE {
