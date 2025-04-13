@@ -73,7 +73,9 @@ export class EPISSettingService {
       SETTING_KEY.EPIS_SETTING,
     );
 
-    if (!cachedData) return defaultValue;
+    if (!cachedData) {
+      return defaultValue;
+    }
     const appSetting = await this.getConfiguration(cachedData, configString);
 
     return appSetting[0]?.value || defaultValue;
