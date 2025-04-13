@@ -54,7 +54,7 @@ jobs:
           git push origin HEAD --follow-tags
 
   build-and-deploy:
-    # needs: [bump-version]
+    needs: [bump-version]
     name: Build and deploy new version
     runs-on: 
       - ubuntu-latest
