@@ -74,6 +74,7 @@ export interface IVerifiedProfilePaymentMethod {
   type: PAYMENT_TYPE;
   title: string;
   source: string[];
+  isEnabled: boolean;
   fee: Partial<{
     percent: number;
     amount: number;
