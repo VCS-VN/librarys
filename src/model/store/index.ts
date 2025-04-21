@@ -75,6 +75,7 @@ export interface IStoreSetting {
   stripeAccountId: string;
   verifiedRequirements: any;
   paymentMethods: Partial<IVerifiedProfilePaymentMethod>[];
+  readerId: string;
 }
 
 export interface IVerifiedProfilePaymentMethod {
@@ -86,7 +87,6 @@ export interface IVerifiedProfilePaymentMethod {
     percent: number;
     amount: number;
   }>;
-  readerId: string;
 }
 
 export interface IUpdateStore extends IStore {}
