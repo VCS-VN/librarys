@@ -80,12 +80,13 @@ export interface IStoreSetting {
 export interface IVerifiedProfilePaymentMethod {
   type: PAYMENT_TYPE;
   title: string;
-  source: string[];
+  sources: string[];
   isEnabled: boolean;
   fee: Partial<{
     percent: number;
     amount: number;
   }>;
+  readerId: string;
 }
 
 export interface IUpdateStore extends IStore {}
