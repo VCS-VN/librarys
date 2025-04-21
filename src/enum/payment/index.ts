@@ -18,6 +18,8 @@ export enum PAYMENT_TYPE {
   VIET_QR = 'VIET_QR',
   BALANCE = 'BALANCE',
   TRANSFER = 'TRANSFER',
+  AFTER_PAY = 'AFTER_PAY',
+  ZIP = 'ZIP',
 }
 
 export enum PAYMENT_RESOURCE {
