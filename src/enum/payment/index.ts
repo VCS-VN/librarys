@@ -51,4 +51,5 @@ export enum PAYMENT_PROVIDER {
   STRIPE = 'STRIPE',
   TYRO = 'TYRO',
   PAY_ME = 'PAY_ME',
+  HELLO_ZAI = 'HELLO_ZAI',
 }
