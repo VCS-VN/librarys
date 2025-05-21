@@ -6,6 +6,7 @@ import {
   STRIPE_TYPE,
 } from '@/enum';
 import { StripeSubscription } from '../stripe';
+
 import { IDoorDashStore } from '../delivery';
 
 export interface IStorePayment {
