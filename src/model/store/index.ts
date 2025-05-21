@@ -80,6 +80,7 @@ export interface IStoreSetting {
   helloZaiId: string;
   helloZaiVA: any;
   helloZaiWalletAccount: any;
+  bankAccountId: string;
 }
 
 export interface IVerifiedProfilePaymentMethod {
