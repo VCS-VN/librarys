@@ -6,6 +6,7 @@ export interface ICreateWithdraw {
   provider: WITHDRAW_PROVIDER;
   description?: string;
   withdrawInfoId: string;
+  storeId: string;
 }
 
 export interface IWithdraw {

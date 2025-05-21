@@ -7,4 +7,5 @@ export enum WITHDRAW_PROVIDER {
   AIR_WALLEX = 'AIR_WALLEX',
   WISE = 'WISE',
   PAY_ME = 'PAY_ME',
+  HELLO_ZAI = 'HELLO_ZAI',
 }
