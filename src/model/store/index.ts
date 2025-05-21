@@ -79,6 +79,7 @@ export interface IStoreSetting {
   isVerifiedHelloZai: boolean;
   helloZaiId: string;
   helloZaiVA: any;
+  helloZaiWalletAccount: any;
 }
 
 export interface IVerifiedProfilePaymentMethod {
