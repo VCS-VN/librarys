@@ -52,4 +52,5 @@ export enum PAYMENT_PROVIDER {
   TYRO = 'TYRO',
   PAY_ME = 'PAY_ME',
   HELLO_ZAI = 'HELLO_ZAI',
+  FIN_MO = 'FIN_MO',
 }
