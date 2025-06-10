@@ -39,4 +39,5 @@ export enum STATUS {
   BOOKED = 36,
   IS_COMING = 37,
   CHECKING = 38,
+  ON_HOLD = 39,
 }
