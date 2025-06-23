@@ -1,9 +1,10 @@
-export enum DIRECT_TYPE {
+export enum SHIPPING_DIRECT_TYPE {
   VN_AU = 'VN-AU',
   AU_VN = 'AU-VN',
   VN_VN = 'VN-VN',
   AU_AU = 'AU-AU',
 }
+
 export enum SHIPPING_STATUS {
   TERMINATED = -1,
   INACTIVE = 0,
@@ -51,11 +52,6 @@ export enum DELIVERY_TYPE {
   DROP_OFFS = 'DROP_OFFS',
 }
 
-export enum COUNTRY {
-  VN = 'VN',
-  AU = 'AU',
-}
-
 export enum GET_VALUE_SETTING_TYPE {
   JSON = 'JSON',
   STRING = 'STRING',
@@ -64,4 +60,20 @@ export enum GET_VALUE_SETTING_TYPE {
 export enum SETTING_TYPE {
   PRIVATE = 'PRIVATE',
   PUBLIC = 'PUBLIC',
+}
+
+export enum RATE_CONDITION_TYPE {
+  ITEM_WEIGHT = 'ITEM_WEIGHT',
+  ITEM_PRICE = 'ITEM_PRICE',
+}
+
+export enum SHIPPING_RATE {
+  STANDARD = 'STANDARD',
+  EXPRESS = 'EXPRESS',
+  CUSTOM = 'CUSTOM',
+}
+
+export enum RATE_TYPE {
+  FLAT = 'FLAT',
+  COURIER_APP = 'COURIER_APP',
 }
