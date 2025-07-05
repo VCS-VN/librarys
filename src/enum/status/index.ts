@@ -40,4 +40,5 @@ export enum STATUS {
   IS_COMING = 37,
   CHECKING = 38,
   ON_HOLD = 39,
+  FULFILLED = 40,
 }
