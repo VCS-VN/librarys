@@ -20,6 +20,7 @@ export enum PAYMENT_TYPE {
   TRANSFER = 'TRANSFER',
   AFTER_PAY = 'AFTER_PAY',
   ZIP = 'ZIP',
+  PAY_ID = 'PAY_ID',
 }
 
 export enum PAYMENT_RESOURCE {
@@ -52,5 +53,5 @@ export enum PAYMENT_PROVIDER {
   TYRO = 'TYRO',
   PAY_ME = 'PAY_ME',
   HELLO_ZAI = 'HELLO_ZAI',
-  FIN_MO = 'FIN_MO',
+  FNM = 'FNM',
 }
