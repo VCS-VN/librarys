@@ -77,3 +77,8 @@ export enum RATE_TYPE {
   FLAT = 'FLAT',
   COURIER_APP = 'COURIER_APP',
 }
+
+export enum SHIPPING_PROVIDER {
+  EASY_SHIP = 'easy-ship',
+  SHIP_ENGINE = 'ship-engine',
+}
