@@ -66,6 +66,17 @@ export class EPISSettingService {
     }
   }
 
+  async getJSONv2<T>(configuration: string): Promise<T> {
+    try {
+      const value = await this.getValue(configuration, '');
+
+      return JSON.parse(value);
+    } catch (e) {
+      this.logger.error(e.message);
+      throw e;
+    }
+  }
+
   async getValue(
     configString: string,
     defaultValue?: string | number,
