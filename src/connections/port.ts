@@ -18,3 +18,4 @@ export const FULFILLMENT_PORT = process.env.FULFILLMENT_PORT || 9000;
 export const CONTACT_CENTER_PORT = process.env.CONTACT_CENTER_PORT || 9000;
 export const TRANSACTION_PORT = process.env.TRANSACTION_PORT || 9000;
 export const RETAIL_PORT = process.env.RETAIL_PORT || 9000;
+export const PROMOTION_PORT = process.env.PROMOTION_PORT || 9000;
