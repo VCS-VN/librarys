@@ -20,3 +20,4 @@ export const FULFILLMENT_TOPIC = 'amp.service.fulfillment.topic';
 export const CONTACT_CENTER_TOPIC = 'amp.service.contact.center.topic';
 export const RETAIL_TOPIC = 'amp.service.retail.topic';
 export const PROMOTION_TOPIC = 'amp.service.promotion.topic';
+export const DISCOUNT_TOPIC = 'amp.service.discount.topic';
