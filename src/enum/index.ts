@@ -16,3 +16,4 @@ export * from './shipping';
 export * from './store';
 export * from './fulfillment';
 export * from './stripe';
+export * from './promotion';
