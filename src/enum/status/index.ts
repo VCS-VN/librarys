@@ -1,3 +1,5 @@
+export * from './template';
+
 export enum STATUS {
   TERMINATED = -1,
   DISABLED = 0,
@@ -42,15 +44,3 @@ export enum STATUS {
   ON_HOLD = 39,
   FULFILLED = 40,
 }
-
-export enum TEMPLATE_STATUS {
-  VERIFIED = 1,
-  VERIFYING = 2,
-  DEPLOYING = 3,
-  DEPLOYED = 4,
-  PENDING = 5,
-  INACTIVE = 6,
-  ERROR = 1000,
-}
-
-export const BRANCH_PREFIX = 'template/';
