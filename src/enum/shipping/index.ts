@@ -3,6 +3,8 @@ export enum SHIPPING_DIRECT_TYPE {
   AU_VN = 'AU-VN',
   VN_VN = 'VN-VN',
   AU_AU = 'AU-AU',
+  EU_EU = 'EU-EU',
+  US_US = 'US-US',
 }
 
 export enum SHIPPING_STATUS {
