@@ -5,6 +5,7 @@ export enum SHIPPING_DIRECT_TYPE {
   AU_AU = 'AU-AU',
   EU_EU = 'EU-EU',
   US_US = 'US-US',
+  CA_CA = 'CA-CA',
 }
 
 export enum SHIPPING_STATUS {
