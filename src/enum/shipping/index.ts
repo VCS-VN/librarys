@@ -7,7 +7,6 @@ export enum SHIPPING_DIRECT_TYPE {
   US_US = 'US-US',
   CA_CA = 'CA-CA',
 }
-
 export enum SHIPPING_STATUS {
   TERMINATED = -1,
   INACTIVE = 0,
