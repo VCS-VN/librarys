@@ -7,6 +7,7 @@ export enum SHIPPING_DIRECT_TYPE {
   US_US = 'US-US',
   CA_CA = 'CA-CA',
 }
+
 export enum SHIPPING_STATUS {
   TERMINATED = -1,
   INACTIVE = 0,
@@ -54,11 +55,6 @@ export enum DELIVERY_TYPE {
   DROP_OFFS = 'DROP_OFFS',
 }
 
-export enum GET_VALUE_SETTING_TYPE {
-  JSON = 'JSON',
-  STRING = 'STRING',
-}
-
 export enum SETTING_TYPE {
   PRIVATE = 'PRIVATE',
   PUBLIC = 'PUBLIC',
@@ -83,4 +79,9 @@ export enum RATE_TYPE {
 export enum SHIPPING_PROVIDER {
   EASY_SHIP = 'easy-ship',
   SHIP_ENGINE = 'ship-engine',
+}
+
+export enum SHIPPING_ZONE_TYPE {
+  LOCAL = 'LOCAL',
+  INTERNATIONAL = 'INTERNATIONAL',
 }
