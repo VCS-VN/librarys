@@ -19,3 +19,4 @@ export * from './setting';
 export * from './withdraw';
 export * from './contact-center';
 export * from './template';
+export * from './e-sim';

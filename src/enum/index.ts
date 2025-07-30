@@ -18,3 +18,4 @@ export * from './fulfillment';
 export * from './stripe';
 export * from './promotion';
 export * from './sdui';
+export * from './e-sim';
