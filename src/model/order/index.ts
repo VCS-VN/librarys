@@ -6,7 +6,7 @@ import {
   STATUS,
 } from '@/enum';
 import { ICustomer, IDeliveryInfo, IProduct, IStore } from '@/model';
-import { IESim } from '../esim';
+import { IESim } from '../e-sim';
 
 export interface IOrder {
   _id?: string;
