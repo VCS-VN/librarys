@@ -3,7 +3,7 @@ export enum ORDER_TYPE {
   TAKE_AWAY = 'TAKE_AWAY',
   DELIVERY = 'DELIVERY',
   PICK_UP = 'PICK_UP',
-  ESIM = 'ESIM',
+  E_SIM = 'E_SIM',
   SHIPPING = 'SHIPPING',
   RETAIL = 'RETAIL',
 }

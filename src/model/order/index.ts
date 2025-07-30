@@ -36,7 +36,7 @@ export interface IOrder {
   delivery?: IDeliveryInfo;
   cancelable?: boolean;
   paymentProvider?: PAYMENT_PROVIDER;
-  esim?: IESim;
+  eSim?: IESim;
   shipping?: any;
 }
 
