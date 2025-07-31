@@ -1,1 +1,15 @@
-export enum E_SIM_STATUS {}
+export enum E_SIM_STATUS {
+  TERMINATED = -1,
+  PENDING = 0,
+  ACTIVE = 1,
+  INITIALIZED = 2,
+  WAITING_ACTIVE = 3,
+  INACTIVE = 4,
+  DOWNLOAD = 5,
+  INSTALLED_DEVICE = 6,
+  REMOVED_DEVICE = 7,
+  USED_UP = 8,
+  EXPIRED = 9,
+  CANCELLED = 10,
+  REVOKED = 11,
+}
