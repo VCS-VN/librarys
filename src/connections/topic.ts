@@ -24,3 +24,4 @@ export const DISCOUNT_TOPIC = 'amp.service.discount.topic';
 export const SDUI_TOPIC = 'amp.service.sdui.topic';
 export const E_SIM_TOPIC = 'amp.service.e-sim.topic';
 export const LOCATION_TOPIC = 'amp.service.location.topic';
+export const FOOD_TOPIC = 'amp.service.food.topic';
