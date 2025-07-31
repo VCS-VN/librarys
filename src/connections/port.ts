@@ -21,3 +21,4 @@ export const RETAIL_PORT = process.env.RETAIL_PORT || 9000;
 export const PROMOTION_PORT = process.env.PROMOTION_PORT || 9000;
 export const DISCOUNT_PORT = process.env.DISCOUNT_PORT || 9000;
 export const SDUI_PORT = process.env.SDUI_PORT || 9000;
+export const LOCATION_PORT = process.env.LOCATION_PORT || 9000;
