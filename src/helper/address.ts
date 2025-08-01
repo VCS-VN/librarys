@@ -1,8 +1,17 @@
 export const extractAddressComponent = (
   addressComponents: any[],
   type: string,
-  field = 'long_name',
+  field = 'short_name',
 ) => {
   const comp = addressComponents.find((c) => c.types.includes(type));
-  return comp ? comp[field] : null;
+
+  if (!comp) {
+    return null;
+  }
+
+  if (!comp?.[field]) {
+    return comp?.['long_name'];
+  }
+
+  return comp?.[field];
 };
