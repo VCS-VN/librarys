@@ -20,3 +20,4 @@ export * from './promotion';
 export * from './sdui';
 export * from './e-sim';
 export * from './food';
+export * from './retail';
