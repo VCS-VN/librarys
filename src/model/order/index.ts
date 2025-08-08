@@ -5,8 +5,7 @@ import {
   PAYMENT_TYPE,
   STATUS,
 } from '@/enum';
-import { ICustomer, IFood, IRetail, IShipping, IStore } from '@/model';
-import { IESim } from '../e-sim';
+import { ICustomer, IFood, IRetail, IShipping, IStore, IESim } from '@/model';
 
 export interface IOrder {
   _id?: string;

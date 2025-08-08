@@ -7,8 +7,6 @@ import {
 } from '@/enum';
 import { StripeSubscription } from '../stripe';
 
-import { IDoorDashStore } from '../delivery';
-
 export interface IStorePayment {
   code?: PAYMENT_TYPE;
   name?: string;
@@ -23,11 +21,7 @@ export interface IStorePaymentMetadata {
   };
 }
 
-export interface IStoreDeliveryMetadata {
-  deliveries?: {
-    doorDash?: IDoorDashStore;
-  };
-}
+export interface IStoreDeliveryMetadata {}
 
 export interface IBusinessHour {
   id?: string;
