@@ -1,4 +1,5 @@
 import { FOOD_ORDER_TYPE, FOOD_STATUS } from '@/enum';
+import { IDelivery } from '../delivery';
 
 export interface IFood {
   code: string;
@@ -7,7 +8,7 @@ export interface IFood {
   status: FOOD_STATUS;
   customer: any;
   products: any[];
-  delivery: any;
+  delivery: Partial<IDelivery>;
   pickup: any;
   table: any;
   createdAt: Date;
