@@ -1,9 +1,6 @@
 export enum ORDER_TYPE {
-  DINE_IN = 'DINE_IN',
-  TAKE_AWAY = 'TAKE_AWAY',
-  DELIVERY = 'DELIVERY',
-  PICK_UP = 'PICK_UP',
   E_SIM = 'E_SIM',
   SHIPPING = 'SHIPPING',
   RETAIL = 'RETAIL',
+  FOOD = 'FOOD',
 }
