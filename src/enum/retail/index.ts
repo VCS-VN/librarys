@@ -8,4 +8,6 @@ export enum RETAIL_ORDER_STATUS {
   DELIVERED = 9, // Đã giao
   COMPLETED = 10, // Hoàn tất
   CANCELLED = 11, // Đã hủy
+  READY_FOR_DELIVERY = 12, //
+  DELIVERING = 13,
 }
