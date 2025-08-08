@@ -5,19 +5,18 @@ import {
   PAYMENT_TYPE,
   STATUS,
 } from '@/enum';
-import { ICustomer, IDeliveryInfo, IProduct, IStore } from '@/model';
+import { ICustomer, IFood, IRetail, IShipping, IStore } from '@/model';
 import { IESim } from '../e-sim';
 
 export interface IOrder {
   _id?: string;
-  customerName?: string;
   customer?: ICustomer;
-  products?: IProduct[];
   status?: STATUS;
   transactionId?: string;
   paymentType?: PAYMENT_TYPE;
   type?: ORDER_TYPE;
   storeId?: string;
+  storeSlug?: string;
   total?: number;
   net?: number;
   fees?: number;
@@ -32,12 +31,12 @@ export interface IOrder {
   address?: string;
   resourceType?: string;
   refundStatus?: STATUS;
-  storeSlug?: string;
-  delivery?: IDeliveryInfo;
   cancelable?: boolean;
   paymentProvider?: PAYMENT_PROVIDER;
-  eSim?: IESim;
-  shipping?: any;
+  retail?: Partial<IRetail>;
+  eSim?: Partial<IESim>;
+  food?: Partial<IFood>;
+  shipping?: Partial<IShipping>;
 }
 
 export interface IInsertOrderHistory {

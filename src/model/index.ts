@@ -21,3 +21,5 @@ export * from './contact-center';
 export * from './template';
 export * from './e-sim';
 export * from './food';
+export * from './retail';
+export * from './shipping';

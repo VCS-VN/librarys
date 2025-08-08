@@ -1,9 +1,14 @@
-import { FOOD_STATUS } from '@/enum';
+import { FOOD_ORDER_TYPE, FOOD_STATUS } from '@/enum';
 
-export interface IFoodOrder {
+export interface IFood {
   code: string;
   orderCode: string;
-  products: any[];
+  type: FOOD_ORDER_TYPE;
   status: FOOD_STATUS;
+  customer: any;
+  products: any[];
+  delivery: any;
+  pickup: any;
+  table: any;
   createdAt: Date;
 }
