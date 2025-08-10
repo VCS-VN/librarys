@@ -1,5 +1,3 @@
-export * from './template';
-
 export enum STATUS {
   TERMINATED = -1,
   DISABLED = 0,
