@@ -25,3 +25,4 @@ export const SDUI_TOPIC = 'amp.service.sdui.topic';
 export const E_SIM_TOPIC = 'amp.service.e-sim.topic';
 export const SEARCH_TOPIC = 'amp.service.search.topic';
 export const FOOD_TOPIC = 'amp.service.food.topic';
+export const TRACKING_TOPIC = 'amp.service.tracking.topic';
