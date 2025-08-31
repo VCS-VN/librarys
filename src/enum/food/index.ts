@@ -1,4 +1,5 @@
 export enum FOOD_STATUS {
+  TERMINATED = -1,
   PENDING = 3,
   ACCEPTED, // 4
   PREPARING, // 5
