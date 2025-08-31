@@ -3,7 +3,7 @@ export enum FOOD_STATUS {
   PENDING = 3,
   ACCEPTED, // 4
   PREPARING, // 5
-  OUT_FOR_DELIVERY, // 6 - Delivery only
+  READY_FOR_DELIVERY, // 6 - Delivery only
   DELIVERING, // 7 - Delivery only
   DELIVERED, // 8 - Delivery only
   READY_FOR_PICKUP, // 9 - Pickup only
