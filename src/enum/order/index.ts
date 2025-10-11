@@ -3,4 +3,5 @@ export enum ORDER_TYPE {
   SHIPPING = 'SHIPPING',
   RETAIL = 'RETAIL',
   FOOD = 'FOOD',
+  GROCERY = 'GROCERY',
 }
