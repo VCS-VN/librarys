@@ -25,3 +25,4 @@ export const SEARCH_PORT = process.env.SEARCH_PORT || 9000;
 export const FOOD_PORT = process.env.FOOD_PORT || 9000;
 export const TRACKING_PORT = process.env.TRACKING_PORT || 9000;
 export const PAYMENT_PORT = process.env.PAYMENT_PORT || 9000;
+export const GROCERY_PORT = process.env.GROCERY_PORT || 9000;
