@@ -9,4 +9,5 @@ export enum ENTITY_TYPE {
   ORDER = 'ORDER',
   DELIVERY = 'DELIVERY',
   SHIPPING = 'SHIPPING',
+  CART = 'CART',
 }
