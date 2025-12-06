@@ -27,4 +27,4 @@ export const SEARCH_TOPIC = 'amp.service.search.topic';
 export const FOOD_TOPIC = 'amp.service.food.topic';
 export const TRACKING_TOPIC = 'amp.service.tracking.topic';
 export const GROCERY_TOPIC = 'amp.service.grocery.topic';
-export const EMPLOYEE_TOPIC = 'amp.service.employee.topic';
+export const CART_TOPIC = 'amp.service.cart.topic';
